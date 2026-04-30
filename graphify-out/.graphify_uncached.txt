@@ -1,0 +1,2 @@
+/Users/tomas/github/eaui_subtel/eaui_utils.py
+/Users/tomas/github/eaui_subtel/docs/informe_final.pdf

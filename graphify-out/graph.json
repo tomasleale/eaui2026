@@ -1,0 +1,878 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "hyperedges": [
+      {
+        "nodes": [
+          "eaui_utils_dstats",
+          "eaui_utils_analizar_rm",
+          "eaui_utils_analizar_rm_cruce"
+        ],
+        "relation": "analysis_pipeline_group",
+        "confidence": "EXTRACTED",
+        "confidence_score": 0.85
+      },
+      {
+        "nodes": [
+          "eaui_utils_calcular_gse",
+          "eaui_utils_calcular_ingresos",
+          "eaui_utils_calcular_nivel_habilidades"
+        ],
+        "relation": "feature_engineering_group",
+        "confidence": "EXTRACTED",
+        "confidence_score": 0.9
+      },
+      {
+        "nodes": [
+          "eaui_utils_orden_gse",
+          "eaui_utils_orden_categorias",
+          "eaui_utils_mapa_educ",
+          "eaui_utils_mapa_ocup"
+        ],
+        "relation": "categorical_reference_data_group",
+        "confidence": "EXTRACTED",
+        "confidence_score": 0.95
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "label": "eaui_utils.py",
+      "file_type": "code",
+      "source_file": "eaui_utils.py",
+      "source_location": "L1",
+      "id": "eaui_utils_py",
+      "community": 5,
+      "norm_label": "eaui_utils.py"
+    },
+    {
+      "label": "limpiar_etiqueta()",
+      "file_type": "code",
+      "source_file": "eaui_utils.py",
+      "source_location": "L59",
+      "id": "eaui_subtel_eaui_utils_limpiar_etiqueta",
+      "community": 5,
+      "norm_label": "limpiar_etiqueta()"
+    },
+    {
+      "label": "calcular_gse()",
+      "file_type": "code",
+      "source_file": "eaui_utils.py",
+      "source_location": "L80",
+      "id": "eaui_subtel_eaui_utils_calcular_gse",
+      "community": 7,
+      "norm_label": "calcular_gse()"
+    },
+    {
+      "label": "calcular_ingresos()",
+      "file_type": "code",
+      "source_file": "eaui_utils.py",
+      "source_location": "L103",
+      "id": "eaui_subtel_eaui_utils_calcular_ingresos",
+      "community": 6,
+      "norm_label": "calcular_ingresos()"
+    },
+    {
+      "label": "style_dataframe()",
+      "file_type": "code",
+      "source_file": "eaui_utils.py",
+      "source_location": "L135",
+      "id": "eaui_subtel_eaui_utils_style_dataframe",
+      "community": 1,
+      "norm_label": "style_dataframe()"
+    },
+    {
+      "label": "_ordenar_categorias()",
+      "file_type": "code",
+      "source_file": "eaui_utils.py",
+      "source_location": "L148",
+      "id": "eaui_subtel_eaui_utils_ordenar_categorias",
+      "community": 2,
+      "norm_label": "_ordenar_categorias()"
+    },
+    {
+      "label": "dstats()",
+      "file_type": "code",
+      "source_file": "eaui_utils.py",
+      "source_location": "L164",
+      "id": "eaui_subtel_eaui_utils_dstats",
+      "community": 2,
+      "norm_label": "dstats()"
+    },
+    {
+      "label": "analizar_rm()",
+      "file_type": "code",
+      "source_file": "eaui_utils.py",
+      "source_location": "L236",
+      "id": "eaui_subtel_eaui_utils_analizar_rm",
+      "community": 1,
+      "norm_label": "analizar_rm()"
+    },
+    {
+      "label": "analizar_rm_cruce()",
+      "file_type": "code",
+      "source_file": "eaui_utils.py",
+      "source_location": "L260",
+      "id": "eaui_subtel_eaui_utils_analizar_rm_cruce",
+      "community": 1,
+      "norm_label": "analizar_rm_cruce()"
+    },
+    {
+      "label": "calcular_nivel_habilidades()",
+      "file_type": "code",
+      "source_file": "eaui_utils.py",
+      "source_location": "L301",
+      "id": "eaui_subtel_eaui_utils_calcular_nivel_habilidades",
+      "community": 8,
+      "norm_label": "calcular_nivel_habilidades()"
+    },
+    {
+      "label": "Extrae la parte descriptiva \u00fatil de una etiqueta SPSS.",
+      "file_type": "rationale",
+      "source_file": "eaui_utils.py",
+      "source_location": "L60",
+      "id": "eaui_subtel_eaui_utils_rationale_60",
+      "community": 5,
+      "norm_label": "extrae la parte descriptiva util de una etiqueta spss."
+    },
+    {
+      "label": "Calcula el GSE derivado usando las variables A10 (educaci\u00f3n JH) y A11 (ocupaci\u00f3n",
+      "file_type": "rationale",
+      "source_file": "eaui_utils.py",
+      "source_location": "L81",
+      "id": "eaui_subtel_eaui_utils_rationale_81",
+      "community": 7,
+      "norm_label": "calcula el gse derivado usando las variables a10 (educacion jh) y a11 (ocupacion"
+    },
+    {
+      "label": "Calcula el punto medio de ingresos y grupos de ingresos.",
+      "file_type": "rationale",
+      "source_file": "eaui_utils.py",
+      "source_location": "L104",
+      "id": "eaui_subtel_eaui_utils_rationale_104",
+      "community": 6,
+      "norm_label": "calcula el punto medio de ingresos y grupos de ingresos."
+    },
+    {
+      "label": "Formato visual: enteros sin decimales para conteos, porcentajes con 1 decimal.",
+      "file_type": "rationale",
+      "source_file": "eaui_utils.py",
+      "source_location": "L136",
+      "id": "eaui_subtel_eaui_utils_rationale_136",
+      "community": 1,
+      "norm_label": "formato visual: enteros sin decimales para conteos, porcentajes con 1 decimal."
+    },
+    {
+      "label": "Ordena las categor\u00edas de un DataFrame seg\u00fan el diccionario de \u00f3rdenes.",
+      "file_type": "rationale",
+      "source_file": "eaui_utils.py",
+      "source_location": "L149",
+      "id": "eaui_subtel_eaui_utils_rationale_149",
+      "community": 2,
+      "norm_label": "ordena las categorias de un dataframe segun el diccionario de ordenes."
+    },
+    {
+      "label": "An\u00e1lisis ponderado de variables simples.     tipo: 'frecuencia' | 'cruzada' | 'p",
+      "file_type": "rationale",
+      "source_file": "eaui_utils.py",
+      "source_location": "L165",
+      "id": "eaui_subtel_eaui_utils_rationale_165",
+      "community": 2,
+      "norm_label": "analisis ponderado de variables simples.     tipo: 'frecuencia' | 'cruzada' | 'p"
+    },
+    {
+      "label": "Analiza un grupo de respuesta m\u00faltiple.",
+      "file_type": "rationale",
+      "source_file": "eaui_utils.py",
+      "source_location": "L237",
+      "id": "eaui_subtel_eaui_utils_rationale_237",
+      "community": 1,
+      "norm_label": "analiza un grupo de respuesta multiple."
+    },
+    {
+      "label": "Analiza un grupo de respuesta m\u00faltiple cruzado por una variable demogr\u00e1fica.",
+      "file_type": "rationale",
+      "source_file": "eaui_utils.py",
+      "source_location": "L261",
+      "id": "eaui_subtel_eaui_utils_rationale_261",
+      "community": 1,
+      "norm_label": "analiza un grupo de respuesta multiple cruzado por una variable demografica."
+    },
+    {
+      "label": "Categoriza el nivel de habilidades digitales (Q8).",
+      "file_type": "rationale",
+      "source_file": "eaui_utils.py",
+      "source_location": "L302",
+      "id": "eaui_subtel_eaui_utils_rationale_302",
+      "community": 8,
+      "norm_label": "categoriza el nivel de habilidades digitales (q8)."
+    },
+    {
+      "label": "MAPA_EDUC",
+      "file_type": "code",
+      "source_file": "/Users/tomas/github/eaui_subtel/eaui_utils.py",
+      "id": "eaui_utils_mapa_educ",
+      "community": 9,
+      "norm_label": "mapa_educ"
+    },
+    {
+      "label": "MAPA_OCUP",
+      "file_type": "code",
+      "source_file": "/Users/tomas/github/eaui_subtel/eaui_utils.py",
+      "id": "eaui_utils_mapa_ocup",
+      "community": 3,
+      "norm_label": "mapa_ocup"
+    },
+    {
+      "label": "ORDEN_GSE",
+      "file_type": "code",
+      "source_file": "/Users/tomas/github/eaui_subtel/eaui_utils.py",
+      "id": "eaui_utils_orden_gse",
+      "community": 3,
+      "norm_label": "orden_gse"
+    },
+    {
+      "label": "ORDEN_CATEGORIAS",
+      "file_type": "code",
+      "source_file": "/Users/tomas/github/eaui_subtel/eaui_utils.py",
+      "id": "eaui_utils_orden_categorias",
+      "community": 0,
+      "norm_label": "orden_categorias"
+    },
+    {
+      "label": "limpiar_etiqueta",
+      "file_type": "code",
+      "source_file": "/Users/tomas/github/eaui_subtel/eaui_utils.py",
+      "id": "eaui_utils_limpiar_etiqueta",
+      "community": 0,
+      "norm_label": "limpiar_etiqueta"
+    },
+    {
+      "label": "calcular_gse",
+      "file_type": "code",
+      "source_file": "/Users/tomas/github/eaui_subtel/eaui_utils.py",
+      "id": "eaui_utils_calcular_gse",
+      "community": 3,
+      "norm_label": "calcular_gse"
+    },
+    {
+      "label": "calcular_ingresos",
+      "file_type": "code",
+      "source_file": "/Users/tomas/github/eaui_subtel/eaui_utils.py",
+      "id": "eaui_utils_calcular_ingresos",
+      "community": 0,
+      "norm_label": "calcular_ingresos"
+    },
+    {
+      "label": "style_dataframe",
+      "file_type": "code",
+      "source_file": "/Users/tomas/github/eaui_subtel/eaui_utils.py",
+      "id": "eaui_utils_style_dataframe",
+      "community": 0,
+      "norm_label": "style_dataframe"
+    },
+    {
+      "label": "_ordenar_categorias",
+      "file_type": "code",
+      "source_file": "/Users/tomas/github/eaui_subtel/eaui_utils.py",
+      "id": "eaui_utils_ordenar_categorias",
+      "community": 0,
+      "norm_label": "_ordenar_categorias"
+    },
+    {
+      "label": "dstats",
+      "file_type": "code",
+      "source_file": "/Users/tomas/github/eaui_subtel/eaui_utils.py",
+      "id": "eaui_utils_dstats",
+      "community": 0,
+      "norm_label": "dstats"
+    },
+    {
+      "label": "analizar_rm",
+      "file_type": "code",
+      "source_file": "/Users/tomas/github/eaui_subtel/eaui_utils.py",
+      "id": "eaui_utils_analizar_rm",
+      "community": 0,
+      "norm_label": "analizar_rm"
+    },
+    {
+      "label": "analizar_rm_cruce",
+      "file_type": "code",
+      "source_file": "/Users/tomas/github/eaui_subtel/eaui_utils.py",
+      "id": "eaui_utils_analizar_rm_cruce",
+      "community": 0,
+      "norm_label": "analizar_rm_cruce"
+    },
+    {
+      "label": "Q8_BASICO",
+      "file_type": "code",
+      "source_file": "/Users/tomas/github/eaui_subtel/eaui_utils.py",
+      "id": "eaui_utils_q8_basico",
+      "community": 4,
+      "norm_label": "q8_basico"
+    },
+    {
+      "label": "Q8_INTERMEDIO",
+      "file_type": "code",
+      "source_file": "/Users/tomas/github/eaui_subtel/eaui_utils.py",
+      "id": "eaui_utils_q8_intermedio",
+      "community": 4,
+      "norm_label": "q8_intermedio"
+    },
+    {
+      "label": "Q8_AVANZADO",
+      "file_type": "code",
+      "source_file": "/Users/tomas/github/eaui_subtel/eaui_utils.py",
+      "id": "eaui_utils_q8_avanzado",
+      "community": 4,
+      "norm_label": "q8_avanzado"
+    },
+    {
+      "label": "calcular_nivel_habilidades",
+      "file_type": "code",
+      "source_file": "/Users/tomas/github/eaui_subtel/eaui_utils.py",
+      "id": "eaui_utils_calcular_nivel_habilidades",
+      "community": 4,
+      "norm_label": "calcular_nivel_habilidades"
+    },
+    {
+      "label": "pandas",
+      "file_type": "code",
+      "source_file": "/Users/tomas/github/eaui_subtel/eaui_utils.py",
+      "id": "eaui_utils_pandas",
+      "community": 0,
+      "norm_label": "pandas"
+    },
+    {
+      "label": "numpy",
+      "file_type": "code",
+      "source_file": "/Users/tomas/github/eaui_subtel/eaui_utils.py",
+      "id": "eaui_utils_numpy",
+      "community": 3,
+      "norm_label": "numpy"
+    },
+    {
+      "label": "matplotlib.pyplot",
+      "file_type": "code",
+      "source_file": "/Users/tomas/github/eaui_subtel/eaui_utils.py",
+      "id": "eaui_utils_matplotlib",
+      "community": 10,
+      "norm_label": "matplotlib.pyplot"
+    },
+    {
+      "label": "seaborn",
+      "file_type": "code",
+      "source_file": "/Users/tomas/github/eaui_subtel/eaui_utils.py",
+      "id": "eaui_utils_seaborn",
+      "community": 11,
+      "norm_label": "seaborn"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "eaui_utils.py",
+      "source_location": "L59",
+      "weight": 1.0,
+      "_src": "eaui_utils_py",
+      "_tgt": "eaui_subtel_eaui_utils_limpiar_etiqueta",
+      "source": "eaui_utils_py",
+      "target": "eaui_subtel_eaui_utils_limpiar_etiqueta",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "eaui_utils.py",
+      "source_location": "L80",
+      "weight": 1.0,
+      "_src": "eaui_utils_py",
+      "_tgt": "eaui_subtel_eaui_utils_calcular_gse",
+      "source": "eaui_utils_py",
+      "target": "eaui_subtel_eaui_utils_calcular_gse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "eaui_utils.py",
+      "source_location": "L103",
+      "weight": 1.0,
+      "_src": "eaui_utils_py",
+      "_tgt": "eaui_subtel_eaui_utils_calcular_ingresos",
+      "source": "eaui_utils_py",
+      "target": "eaui_subtel_eaui_utils_calcular_ingresos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "eaui_utils.py",
+      "source_location": "L135",
+      "weight": 1.0,
+      "_src": "eaui_utils_py",
+      "_tgt": "eaui_subtel_eaui_utils_style_dataframe",
+      "source": "eaui_utils_py",
+      "target": "eaui_subtel_eaui_utils_style_dataframe",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "eaui_utils.py",
+      "source_location": "L148",
+      "weight": 1.0,
+      "_src": "eaui_utils_py",
+      "_tgt": "eaui_subtel_eaui_utils_ordenar_categorias",
+      "source": "eaui_utils_py",
+      "target": "eaui_subtel_eaui_utils_ordenar_categorias",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "eaui_utils.py",
+      "source_location": "L164",
+      "weight": 1.0,
+      "_src": "eaui_utils_py",
+      "_tgt": "eaui_subtel_eaui_utils_dstats",
+      "source": "eaui_utils_py",
+      "target": "eaui_subtel_eaui_utils_dstats",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "eaui_utils.py",
+      "source_location": "L236",
+      "weight": 1.0,
+      "_src": "eaui_utils_py",
+      "_tgt": "eaui_subtel_eaui_utils_analizar_rm",
+      "source": "eaui_utils_py",
+      "target": "eaui_subtel_eaui_utils_analizar_rm",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "eaui_utils.py",
+      "source_location": "L260",
+      "weight": 1.0,
+      "_src": "eaui_utils_py",
+      "_tgt": "eaui_subtel_eaui_utils_analizar_rm_cruce",
+      "source": "eaui_utils_py",
+      "target": "eaui_subtel_eaui_utils_analizar_rm_cruce",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "eaui_utils.py",
+      "source_location": "L301",
+      "weight": 1.0,
+      "_src": "eaui_utils_py",
+      "_tgt": "eaui_subtel_eaui_utils_calcular_nivel_habilidades",
+      "source": "eaui_utils_py",
+      "target": "eaui_subtel_eaui_utils_calcular_nivel_habilidades",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "eaui_utils.py",
+      "source_location": "L60",
+      "weight": 1.0,
+      "_src": "eaui_subtel_eaui_utils_rationale_60",
+      "_tgt": "eaui_subtel_eaui_utils_limpiar_etiqueta",
+      "source": "eaui_subtel_eaui_utils_limpiar_etiqueta",
+      "target": "eaui_subtel_eaui_utils_rationale_60",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "eaui_utils.py",
+      "source_location": "L81",
+      "weight": 1.0,
+      "_src": "eaui_subtel_eaui_utils_rationale_81",
+      "_tgt": "eaui_subtel_eaui_utils_calcular_gse",
+      "source": "eaui_subtel_eaui_utils_calcular_gse",
+      "target": "eaui_subtel_eaui_utils_rationale_81",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "eaui_utils.py",
+      "source_location": "L104",
+      "weight": 1.0,
+      "_src": "eaui_subtel_eaui_utils_rationale_104",
+      "_tgt": "eaui_subtel_eaui_utils_calcular_ingresos",
+      "source": "eaui_subtel_eaui_utils_calcular_ingresos",
+      "target": "eaui_subtel_eaui_utils_rationale_104",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "eaui_utils.py",
+      "source_location": "L183",
+      "weight": 1.0,
+      "_src": "eaui_subtel_eaui_utils_dstats",
+      "_tgt": "eaui_subtel_eaui_utils_style_dataframe",
+      "source": "eaui_subtel_eaui_utils_style_dataframe",
+      "target": "eaui_subtel_eaui_utils_dstats",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "eaui_utils.py",
+      "source_location": "L257",
+      "weight": 1.0,
+      "_src": "eaui_subtel_eaui_utils_analizar_rm",
+      "_tgt": "eaui_subtel_eaui_utils_style_dataframe",
+      "source": "eaui_subtel_eaui_utils_style_dataframe",
+      "target": "eaui_subtel_eaui_utils_analizar_rm",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "eaui_utils.py",
+      "source_location": "L283",
+      "weight": 1.0,
+      "_src": "eaui_subtel_eaui_utils_analizar_rm_cruce",
+      "_tgt": "eaui_subtel_eaui_utils_style_dataframe",
+      "source": "eaui_subtel_eaui_utils_style_dataframe",
+      "target": "eaui_subtel_eaui_utils_analizar_rm_cruce",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "eaui_utils.py",
+      "source_location": "L136",
+      "weight": 1.0,
+      "_src": "eaui_subtel_eaui_utils_rationale_136",
+      "_tgt": "eaui_subtel_eaui_utils_style_dataframe",
+      "source": "eaui_subtel_eaui_utils_style_dataframe",
+      "target": "eaui_subtel_eaui_utils_rationale_136",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "eaui_utils.py",
+      "source_location": "L179",
+      "weight": 1.0,
+      "_src": "eaui_subtel_eaui_utils_dstats",
+      "_tgt": "eaui_subtel_eaui_utils_ordenar_categorias",
+      "source": "eaui_subtel_eaui_utils_ordenar_categorias",
+      "target": "eaui_subtel_eaui_utils_dstats",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "eaui_utils.py",
+      "source_location": "L149",
+      "weight": 1.0,
+      "_src": "eaui_subtel_eaui_utils_rationale_149",
+      "_tgt": "eaui_subtel_eaui_utils_ordenar_categorias",
+      "source": "eaui_subtel_eaui_utils_ordenar_categorias",
+      "target": "eaui_subtel_eaui_utils_rationale_149",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "eaui_utils.py",
+      "source_location": "L165",
+      "weight": 1.0,
+      "_src": "eaui_subtel_eaui_utils_rationale_165",
+      "_tgt": "eaui_subtel_eaui_utils_dstats",
+      "source": "eaui_subtel_eaui_utils_dstats",
+      "target": "eaui_subtel_eaui_utils_rationale_165",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "eaui_utils.py",
+      "source_location": "L237",
+      "weight": 1.0,
+      "_src": "eaui_subtel_eaui_utils_rationale_237",
+      "_tgt": "eaui_subtel_eaui_utils_analizar_rm",
+      "source": "eaui_subtel_eaui_utils_analizar_rm",
+      "target": "eaui_subtel_eaui_utils_rationale_237",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "eaui_utils.py",
+      "source_location": "L261",
+      "weight": 1.0,
+      "_src": "eaui_subtel_eaui_utils_rationale_261",
+      "_tgt": "eaui_subtel_eaui_utils_analizar_rm_cruce",
+      "source": "eaui_subtel_eaui_utils_analizar_rm_cruce",
+      "target": "eaui_subtel_eaui_utils_rationale_261",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "eaui_utils.py",
+      "source_location": "L302",
+      "weight": 1.0,
+      "_src": "eaui_subtel_eaui_utils_rationale_302",
+      "_tgt": "eaui_subtel_eaui_utils_calcular_nivel_habilidades",
+      "source": "eaui_subtel_eaui_utils_calcular_nivel_habilidades",
+      "target": "eaui_subtel_eaui_utils_rationale_302",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "_src": "eaui_utils_calcular_gse",
+      "_tgt": "eaui_utils_mapa_ocup",
+      "source": "eaui_utils_mapa_ocup",
+      "target": "eaui_utils_calcular_gse"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "eaui_utils_calcular_gse",
+      "_tgt": "eaui_utils_orden_gse",
+      "source": "eaui_utils_orden_gse",
+      "target": "eaui_utils_calcular_gse"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "eaui_utils_calcular_ingresos",
+      "_tgt": "eaui_utils_orden_categorias",
+      "source": "eaui_utils_orden_categorias",
+      "target": "eaui_utils_calcular_ingresos"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "eaui_utils_dstats",
+      "_tgt": "eaui_utils_orden_categorias",
+      "source": "eaui_utils_orden_categorias",
+      "target": "eaui_utils_dstats"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.6,
+      "_src": "eaui_utils_limpiar_etiqueta",
+      "_tgt": "eaui_utils_pandas",
+      "source": "eaui_utils_limpiar_etiqueta",
+      "target": "eaui_utils_pandas"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "eaui_utils_calcular_gse",
+      "_tgt": "eaui_utils_pandas",
+      "source": "eaui_utils_calcular_gse",
+      "target": "eaui_utils_pandas"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "eaui_utils_calcular_gse",
+      "_tgt": "eaui_utils_numpy",
+      "source": "eaui_utils_calcular_gse",
+      "target": "eaui_utils_numpy"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "eaui_utils_calcular_ingresos",
+      "_tgt": "eaui_utils_pandas",
+      "source": "eaui_utils_calcular_ingresos",
+      "target": "eaui_utils_pandas"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "eaui_utils_style_dataframe",
+      "_tgt": "eaui_utils_pandas",
+      "source": "eaui_utils_style_dataframe",
+      "target": "eaui_utils_pandas"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "eaui_utils_dstats",
+      "_tgt": "eaui_utils_style_dataframe",
+      "source": "eaui_utils_style_dataframe",
+      "target": "eaui_utils_dstats"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "eaui_utils_analizar_rm",
+      "_tgt": "eaui_utils_style_dataframe",
+      "source": "eaui_utils_style_dataframe",
+      "target": "eaui_utils_analizar_rm"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "eaui_utils_analizar_rm_cruce",
+      "_tgt": "eaui_utils_style_dataframe",
+      "source": "eaui_utils_style_dataframe",
+      "target": "eaui_utils_analizar_rm_cruce"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "eaui_utils_dstats",
+      "_tgt": "eaui_utils_ordenar_categorias",
+      "source": "eaui_utils_ordenar_categorias",
+      "target": "eaui_utils_dstats"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "_src": "eaui_utils_dstats",
+      "_tgt": "eaui_utils_pandas",
+      "source": "eaui_utils_dstats",
+      "target": "eaui_utils_pandas"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "eaui_utils_dstats",
+      "_tgt": "eaui_utils_numpy",
+      "source": "eaui_utils_dstats",
+      "target": "eaui_utils_numpy"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "_src": "eaui_utils_analizar_rm",
+      "_tgt": "eaui_utils_dstats",
+      "source": "eaui_utils_dstats",
+      "target": "eaui_utils_analizar_rm"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "eaui_utils_analizar_rm",
+      "_tgt": "eaui_utils_pandas",
+      "source": "eaui_utils_analizar_rm",
+      "target": "eaui_utils_pandas"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "_src": "eaui_utils_analizar_rm_cruce",
+      "_tgt": "eaui_utils_analizar_rm",
+      "source": "eaui_utils_analizar_rm",
+      "target": "eaui_utils_analizar_rm_cruce"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "eaui_utils_analizar_rm_cruce",
+      "_tgt": "eaui_utils_pandas",
+      "source": "eaui_utils_analizar_rm_cruce",
+      "target": "eaui_utils_pandas"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "eaui_utils_calcular_nivel_habilidades",
+      "_tgt": "eaui_utils_q8_basico",
+      "source": "eaui_utils_q8_basico",
+      "target": "eaui_utils_calcular_nivel_habilidades"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "eaui_utils_calcular_nivel_habilidades",
+      "_tgt": "eaui_utils_q8_intermedio",
+      "source": "eaui_utils_q8_intermedio",
+      "target": "eaui_utils_calcular_nivel_habilidades"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "eaui_utils_calcular_nivel_habilidades",
+      "_tgt": "eaui_utils_q8_avanzado",
+      "source": "eaui_utils_q8_avanzado",
+      "target": "eaui_utils_calcular_nivel_habilidades"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "_src": "eaui_utils_calcular_nivel_habilidades",
+      "_tgt": "eaui_utils_pandas",
+      "source": "eaui_utils_calcular_nivel_habilidades",
+      "target": "eaui_utils_pandas"
+    }
+  ],
+  "hyperedges": [
+    {
+      "nodes": [
+        "eaui_utils_dstats",
+        "eaui_utils_analizar_rm",
+        "eaui_utils_analizar_rm_cruce"
+      ],
+      "relation": "analysis_pipeline_group",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.85
+    },
+    {
+      "nodes": [
+        "eaui_utils_calcular_gse",
+        "eaui_utils_calcular_ingresos",
+        "eaui_utils_calcular_nivel_habilidades"
+      ],
+      "relation": "feature_engineering_group",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9
+    },
+    {
+      "nodes": [
+        "eaui_utils_orden_gse",
+        "eaui_utils_orden_categorias",
+        "eaui_utils_mapa_educ",
+        "eaui_utils_mapa_ocup"
+      ],
+      "relation": "categorical_reference_data_group",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95
+    }
+  ]
+}
