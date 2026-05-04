@@ -36,10 +36,11 @@ env/
 *.swp
 *.swo
 *~
+.vscode/*
+.idea/*
 
 # Node
 node_modules/
-package-lock.json
 
 # Data (raw, sensitive, large)
 data/raw/
@@ -57,6 +58,15 @@ Thumbs.db
 temp/
 
 # Large outputs (regenerable)
-graphify-out/graph.html
-graphify-out/*.png
-graphify-out/*.svg
+graphify-out/
+analysis/outputs/
+*.pkl
+*.json
+
+# Local config
+.streamlit/
+.claude/
+
+# System
+.env.local
+*.docx
