@@ -1,94 +1,83 @@
 # Graph Report - .  (2026-05-03)
 
 ## Corpus Check
-- Corpus is ~12,325 words - fits in a single context window. You may not need a graph.
+- 8 files · ~75,000 words
+- Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 27 nodes · 34 edges · 6 communities detected
-- Extraction: 82% EXTRACTED · 18% INFERRED · 0% AMBIGUOUS · INFERRED: 6 edges (avg confidence: 0.83)
-- Token cost: 82,355 input · 18,892 output
+- 45 nodes · 33 edges · 12 communities detected
+- Extraction: 79% EXTRACTED · 21% INFERRED · 0% AMBIGUOUS · INFERRED: 7 edges (avg confidence: 0.85)
+- Token cost: 82,940 input · 12,500 output
 
 ## Community Hubs (Navigation)
-- [[_COMMUNITY_Data & Skills Architecture|Data & Skills Architecture]]
-- [[_COMMUNITY_Classification Model (Improved)|Classification Model (Improved)]]
-- [[_COMMUNITY_Policy Implications & Findings|Policy Implications & Findings]]
-- [[_COMMUNITY_SHAP & Explainability|SHAP & Explainability]]
-- [[_COMMUNITY_Documentation Pipeline|Documentation Pipeline]]
-- [[_COMMUNITY_Graph Infrastructure|Graph Infrastructure]]
+- [[_COMMUNITY_Advanced Analysis|Advanced Analysis]]
+- [[_COMMUNITY_Behavior-Driven Performance|Behavior-Driven Performance]]
+- [[_COMMUNITY_Classification & Feature Importance|Classification & Feature Importance]]
+- [[_COMMUNITY_Bivariate Analysis|Bivariate Analysis]]
+- [[_COMMUNITY_Project Infrastructure|Project Infrastructure]]
+- [[_COMMUNITY_ML Interpretation|ML Interpretation]]
+- [[_COMMUNITY_Key Predictors|Key Predictors]]
+- [[_COMMUNITY_Youth Resilience|Youth Resilience]]
+- [[_COMMUNITY_Access Requirements|Access Requirements]]
+- [[_COMMUNITY_Pipeline Orchestration|Pipeline Orchestration]]
+- [[_COMMUNITY_GSE Derivation|GSE Derivation]]
+- [[_COMMUNITY_Skills Classification|Skills Classification]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `Feature Engineering: 4 Variables de Comportamiento` - 5 edges
-2. `Behavior > Demographics (Key Finding)` - 5 edges
-3. `SHAP Analysis: Explicabilidad del Modelo` - 4 edges
-4. `Modelo de Clasificación Mejorado` - 4 edges
-5. `EAUI Subtel Data Graph & Resilience Analysis` - 4 edges
-6. `n_actividades_online (Feature)` - 4 edges
-7. `Análisis Completo EAUI 2026` - 3 edges
-8. `Gradient Boosting Classifier` - 3 edges
-9. `GSE Derivation (Matriz 2x6)` - 3 edges
-10. `nivel_habilidades (Target Variable)` - 3 edges
+1. `EAUI 2026 Analysis Plan` - 8 edges
+2. `Permutation Importance vs sklearn Feature Importance` - 4 edges
+3. `Block 4: Supervised Machine Learning (Classification, Interpretation)` - 3 edges
+4. `Cross-Tabulation Analysis` - 3 edges
+5. `Block 1: Bivariate Descriptive Analysis` - 2 edges
+6. `Block 2: Multivariate Analysis (MCA, PCA, Clustering)` - 2 edges
+7. `Block 3: Inferential Analysis (Hypothesis Testing, Regression)` - 2 edges
+8. `EAUI Subtel Project Overview` - 2 edges
+9. `eaui2026_v3.ipynb (Latest Version)` - 2 edges
+10. `Summary: Model Improvement Achievements` - 2 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `Resilience: Youth Overcomes Barriers` --semantically_similar_to--> `Behavior > Demographics (Key Finding)`  [INFERRED] [semantically similar]
-  GRAPH_INSIGHTS.md → SUMMARY.md
-- `GSE Derivation (Matriz 2x6)` --conceptually_related_to--> `Multicolinearity: GSE mediada por actividades`  [INFERRED]
-  GRAPH_INSIGHTS.md → SHAP_ANALYSIS.md
-- `Access is NOT the Bottleneck (Policy Insight)` --conceptually_related_to--> `Behavior > Demographics (Key Finding)`  [INFERRED]
+- `EAUI 2026 Analysis Plan` --rationale_for--> `Bloque 5: Executive summary, 15 insights, recommendations, limitations`  [INFERRED]
+  PLAN_ANALISIS_EAUI2026.md → eaui2026_analisis_bloques.ipynb
+- `N_actividades_online: 57.5% True Importance` --rationale_for--> `Key Insight: Behavior > Demographics (68% vs 32%)`  [INFERRED]
   SHAP_ANALYSIS.md → SUMMARY.md
-- `SHAP Analysis: Explicabilidad del Modelo` --references--> `Gradient Boosting Classifier`  [EXTRACTED]
-  SHAP_ANALYSIS.md → CLASSIFICATION_MODEL_IMPROVED.md
-- `EAUI 2026: Análisis Completo - README` --references--> `Modelo de Clasificación Mejorado`  [EXTRACTED]
-  README_ANALYSIS.md → CLASSIFICATION_MODEL_IMPROVED.md
+- `Bloque 1: Chi-square & Cramér's V on 28 bivariates` --conceptually_related_to--> `Cross-Tabulation Analysis`  [INFERRED]
+  eaui2026_analisis_bloques.ipynb → README_ANALYSIS.md
+- `Block 1: Bivariate Descriptive Analysis` --rationale_for--> `Bloque 1: Chi-square & Cramér's V on 28 bivariates`  [EXTRACTED]
+  PLAN_ANALISIS_EAUI2026.md → eaui2026_analisis_bloques.ipynb
+- `Block 2: Multivariate Analysis (MCA, PCA, Clustering)` --rationale_for--> `Bloque 2: MCA (Q8), PCA (5 numeric), FAMD (mixed), clustering`  [EXTRACTED]
+  PLAN_ANALISIS_EAUI2026.md → eaui2026_analisis_bloques.ipynb
 
-## Hyperedges (group relationships)
-- **Feature Engineering & Classification Pipeline** — feature_engineering, n_actividades_online, frecuencia_internet_feature, gradient_boosting_model, behavior_dominates_demographics [EXTRACTED 0.95]
-- **Data Processing & Skills Classification** — eaui2026_v3_ipynb, gse_derivation, data_pipeline, nivel_habilidades, skill_classification_hierarchy [EXTRACTED 0.95]
-- **Policy Implications of Feature Importance** — behavior_dominates_demographics, access_not_bottleneck, resilience_finding, permutation_importance [INFERRED 0.85]
+## Communities (15 total, 5 thin omitted)
 
-## Communities
+### Community 0 - "Advanced Analysis"
+Cohesion: 0.22
+Nodes (9): Bloque 2: MCA (Q8), PCA (5 numeric), FAMD (mixed), clustering, Bloque 3: 95% CI, t-tests, logit, ordinal regression, WLS, Bloque 5: Executive summary, 15 insights, recommendations, limitations, EAUI 2026 Analysis Plan, Expansion Factors (fe_hogar, fe_personas), Block 3: Inferential Analysis (Hypothesis Testing, Regression), Block 2: Multivariate Analysis (MCA, PCA, Clustering), Target Variables (Outcomes) (+1 more)
 
-### Community 0 - "Data & Skills Architecture"
-Cohesion: 0.25
-Nodes (8): Clase Básico: Persistent Classification Problem, EAUI Subtel Data Graph & Resilience Analysis, GSE Derivation (Matriz 2x6), Income Stratification (3 Groups), nivel_habilidades (Target Variable), Q8_1:Q8_19 (Skills Survey Items), Skill Classification: Hierarchical Levels, Urban-Rural Digital Gap
+### Community 1 - "Behavior-Driven Performance"
+Cohesion: 0.33
+Nodes (6): N_actividades_online: 57.5% True Importance, Summary: Model Improvement Achievements, Baseline Classification Model (57.2% accuracy), Feature Engineering: 4 New Behavioral Variables, Improved Classification Model (66.4% accuracy), Key Insight: Behavior > Demographics (68% vs 32%)
 
-### Community 1 - "Classification Model (Improved)"
-Cohesion: 0.47
-Nodes (6): Modelo de Clasificación Mejorado, Feature Engineering: 4 Variables de Comportamiento, frecuencia_internet_num (Feature), Gradient Boosting Classifier, n_actividades_online (Feature), Q21_1:Q21_44 (Online Activities)
+### Community 2 - "Classification & Feature Importance"
+Cohesion: 0.33
+Nodes (6): Feature Importance: Age Dominates (46.4%), Gradient Boosting Classifier (57.2%), Classification Model (Original): 6 Features, Internet Access Almost Irrelevant (-0.2%), GSE Effect Mediated Through Behavior (6% → 1.1%), Permutation Importance vs sklearn Feature Importance
 
-### Community 2 - "Policy Implications & Findings"
+### Community 3 - "Bivariate Analysis"
+Cohesion: 0.4
+Nodes (5): Bloque 1: Chi-square & Cramér's V on 28 bivariates, Block 1: Bivariate Descriptive Analysis, Cross-Tabulation Analysis, Graphify: Project Architecture Analysis, Resilience Analysis (Youth Defying Barriers)
+
+### Community 4 - "Project Infrastructure"
 Cohesion: 0.5
-Nodes (5): Access is NOT the Bottleneck (Policy Insight), Análisis Completo EAUI 2026, Behavior > Demographics (Key Finding), Resilience: Youth Overcomes Barriers, EAUI 2026: Resumen Ejecutivo
+Nodes (4): Data Directory Structure, EAUI Subtel Project Overview, eaui2026_v3.ipynb (Latest Version), pyreadstat Library (SPSS Reader)
 
-### Community 3 - "SHAP & Explainability"
-Cohesion: 1.0
-Nodes (3): Multicolinearity: GSE mediada por actividades, Permutation Importance (Método), SHAP Analysis: Explicabilidad del Modelo
+### Community 5 - "ML Interpretation"
+Cohesion: 0.67
+Nodes (3): Bloque 4: 6 RF models, SHAP interpretation, Block 4: Supervised Machine Learning (Classification, Interpretation), SHAP Values and Permutation Importance
 
-### Community 4 - "Documentation Pipeline"
-Cohesion: 1.0
-Nodes (2): Data Processing Pipeline, EAUI 2026: Análisis Completo - README
-
-### Community 5 - "Graph Infrastructure"
-Cohesion: 1.0
-Nodes (1): Graphify Knowledge Graph Report
+### Community 6 - "Key Predictors"
+Cohesion: 0.67
+Nodes (3): Head Education: Parental Modeling Effect (66% university vs 26% no education), GSE: 3.3× Multiplier (AB 70% vs E 21% Advanced), Urban/Rural Gap: 10pp (42% vs 32% advanced)
 
 ## Knowledge Gaps
-- **6 isolated node(s):** `Graphify Knowledge Graph Report`, `Income Stratification (3 Groups)`, `Q8_1:Q8_19 (Skills Survey Items)`, `Q21_1:Q21_44 (Online Activities)`, `frecuencia_internet_num (Feature)` (+1 more)
+- **23 isolated node(s):** `Target Variables (Outcomes)`, `Structural Predictors`, `Expansion Factors (fe_hogar, fe_personas)`, `SHAP Values and Permutation Importance`, `Data Directory Structure` (+18 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **Thin community `Documentation Pipeline`** (2 nodes): `Data Processing Pipeline`, `EAUI 2026: Análisis Completo - README`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Graph Infrastructure`** (1 nodes): `Graphify Knowledge Graph Report`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-
-## Suggested Questions
-_Questions this graph is uniquely positioned to answer:_
-
-- **Why does `EAUI Subtel Data Graph & Resilience Analysis` connect `Data & Skills Architecture` to `Policy Implications & Findings`?**
-  _High betweenness centrality (0.267) - this node is a cross-community bridge._
-- **Why does `Behavior > Demographics (Key Finding)` connect `Policy Implications & Findings` to `Classification Model (Improved)`?**
-  _High betweenness centrality (0.240) - this node is a cross-community bridge._
-- **Why does `Resilience: Youth Overcomes Barriers` connect `Policy Implications & Findings` to `Data & Skills Architecture`?**
-  _High betweenness centrality (0.172) - this node is a cross-community bridge._
-- **Are the 2 inferred relationships involving `Behavior > Demographics (Key Finding)` (e.g. with `Resilience: Youth Overcomes Barriers` and `Access is NOT the Bottleneck (Policy Insight)`) actually correct?**
-  _`Behavior > Demographics (Key Finding)` has 2 INFERRED edges - model-reasoned connections that need verification._
-- **What connects `Graphify Knowledge Graph Report`, `Income Stratification (3 Groups)`, `Q8_1:Q8_19 (Skills Survey Items)` to the rest of the system?**
-  _6 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **5 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.

@@ -1,0 +1,205 @@
+{
+  "communities": {
+    "0": [
+      "bloque2_mca_pca_famd",
+      "bloque3_inference",
+      "bloque5_synthesis",
+      "plan_eaui2026",
+      "plan_expansion_factors",
+      "plan_inferential",
+      "plan_multivariate",
+      "plan_outcomes",
+      "plan_predictors"
+    ],
+    "1": [
+      "shap_activities_dominant",
+      "summary_achievements",
+      "summary_baseline_model",
+      "summary_feature_engineering",
+      "summary_improved_model",
+      "summary_key_insight_behavior"
+    ],
+    "2": [
+      "classif_feature_importance",
+      "classif_gradient_boosting",
+      "classif_model_original",
+      "shap_access_irrelevant",
+      "shap_gse_mediated",
+      "shap_permutation_importance"
+    ],
+    "3": [
+      "bloque1_bivariate_chi2",
+      "plan_bivariate_analysis",
+      "readme_cross_tabulation",
+      "readme_graphify",
+      "readme_resilience"
+    ],
+    "4": [
+      "claude_data_directory",
+      "claude_eaui_project",
+      "claude_notebook_v3",
+      "claude_pyreadstat"
+    ],
+    "5": [
+      "bloque4_ml_shap",
+      "plan_ml_supervised",
+      "plan_shap_interpretation"
+    ],
+    "6": [
+      "graph_education_head",
+      "graph_gse_predictor",
+      "graph_urban_rural"
+    ],
+    "7": [
+      "generar_diccionario_variables_createvariablesection",
+      "generar_diccionario_variables_js"
+    ],
+    "8": [
+      "generar_diccionario_csv_py"
+    ],
+    "9": [
+      "generar_informe_js"
+    ],
+    "10": [
+      "graph_resilience_youth"
+    ],
+    "11": [
+      "graph_internet_binary_gate"
+    ],
+    "12": [
+      "graph_pipeline_orchestration"
+    ],
+    "13": [
+      "graph_gse_derivation_cell4"
+    ],
+    "14": [
+      "graph_skills_classification_cell26"
+    ]
+  },
+  "cohesion": {
+    "0": 0.22,
+    "1": 0.33,
+    "2": 0.33,
+    "3": 0.4,
+    "4": 0.5,
+    "5": 0.67,
+    "6": 0.67,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 1.0,
+    "14": 1.0
+  },
+  "gods": [
+    {
+      "id": "plan_eaui2026",
+      "label": "EAUI 2026 Analysis Plan",
+      "degree": 8
+    },
+    {
+      "id": "shap_permutation_importance",
+      "label": "Permutation Importance vs sklearn Feature Importance",
+      "degree": 4
+    },
+    {
+      "id": "plan_ml_supervised",
+      "label": "Block 4: Supervised Machine Learning (Classification, Interpretation)",
+      "degree": 3
+    },
+    {
+      "id": "readme_cross_tabulation",
+      "label": "Cross-Tabulation Analysis",
+      "degree": 3
+    },
+    {
+      "id": "plan_bivariate_analysis",
+      "label": "Block 1: Bivariate Descriptive Analysis",
+      "degree": 2
+    },
+    {
+      "id": "plan_multivariate",
+      "label": "Block 2: Multivariate Analysis (MCA, PCA, Clustering)",
+      "degree": 2
+    },
+    {
+      "id": "plan_inferential",
+      "label": "Block 3: Inferential Analysis (Hypothesis Testing, Regression)",
+      "degree": 2
+    },
+    {
+      "id": "claude_eaui_project",
+      "label": "EAUI Subtel Project Overview",
+      "degree": 2
+    },
+    {
+      "id": "claude_notebook_v3",
+      "label": "eaui2026_v3.ipynb (Latest Version)",
+      "degree": 2
+    },
+    {
+      "id": "summary_achievements",
+      "label": "Summary: Model Improvement Achievements",
+      "degree": 2
+    }
+  ],
+  "surprises": [
+    {
+      "source": "EAUI 2026 Analysis Plan",
+      "target": "Bloque 5: Executive summary, 15 insights, recommendations, limitations",
+      "source_files": [
+        "PLAN_ANALISIS_EAUI2026.md",
+        "eaui2026_analisis_bloques.ipynb"
+      ],
+      "confidence": "INFERRED",
+      "relation": "rationale_for",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; peripheral node `Bloque 5: Executive summary, 15 insights, recommendations, limitations` unexpectedly reaches hub `EAUI 2026 Analysis Plan`"
+    },
+    {
+      "source": "N_actividades_online: 57.5% True Importance",
+      "target": "Key Insight: Behavior > Demographics (68% vs 32%)",
+      "source_files": [
+        "SHAP_ANALYSIS.md",
+        "SUMMARY.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "rationale_for",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories"
+    },
+    {
+      "source": "Bloque 1: Chi-square & Cram\u00e9r's V on 28 bivariates",
+      "target": "Cross-Tabulation Analysis",
+      "source_files": [
+        "eaui2026_analisis_bloques.ipynb",
+        "README_ANALYSIS.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "conceptually_related_to",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories"
+    },
+    {
+      "source": "Block 1: Bivariate Descriptive Analysis",
+      "target": "Bloque 1: Chi-square & Cram\u00e9r's V on 28 bivariates",
+      "source_files": [
+        "PLAN_ANALISIS_EAUI2026.md",
+        "eaui2026_analisis_bloques.ipynb"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "rationale_for",
+      "why": "connects across different repos/directories"
+    },
+    {
+      "source": "Block 2: Multivariate Analysis (MCA, PCA, Clustering)",
+      "target": "Bloque 2: MCA (Q8), PCA (5 numeric), FAMD (mixed), clustering",
+      "source_files": [
+        "PLAN_ANALISIS_EAUI2026.md",
+        "eaui2026_analisis_bloques.ipynb"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "rationale_for",
+      "why": "connects across different repos/directories"
+    }
+  ]
+}

@@ -1,10 +1,62 @@
-# OS generated files #
-######################
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# IDEs
 .vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node
+node_modules/
+package-lock.json
+
+# Data (raw, sensitive, large)
+data/raw/
+data/processed/*.csv
+data/processed/*.xlsx
+!data/processed/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary
+*.tmp
+.tmp/
+temp/
+
+# Large outputs (regenerable)
+graphify-out/graph.html
+graphify-out/*.png
+graphify-out/*.svg

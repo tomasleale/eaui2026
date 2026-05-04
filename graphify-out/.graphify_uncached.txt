@@ -1,9 +1,8 @@
-/Users/tomas/github/eaui_subtel/SUMMARY.md
-/Users/tomas/github/eaui_subtel/CLASSIFICATION_MODEL_IMPROVED.md
-/Users/tomas/github/eaui_subtel/ANALYSIS_COMPLETE.md
-/Users/tomas/github/eaui_subtel/SHAP_ANALYSIS.md
-/Users/tomas/github/eaui_subtel/CLASSIFICATION_MODEL.md
-/Users/tomas/github/eaui_subtel/README_ANALYSIS.md
-/Users/tomas/github/eaui_subtel/CLAUDE.md
-/Users/tomas/github/eaui_subtel/GRAPH_INSIGHTS.md
-/Users/tomas/github/eaui_subtel/docs/informe_final.pdf
+PLAN_ANALISIS_EAUI2026.md
+CLAUDE.md
+SUMMARY.md
+README_ANALYSIS.md
+CLASSIFICATION_MODEL.md
+SHAP_ANALYSIS.md
+GRAPH_INSIGHTS.md
+docs/informe_final.pdf

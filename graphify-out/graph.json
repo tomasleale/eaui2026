@@ -1,629 +1,910 @@
 {
   "directed": false,
   "multigraph": false,
-  "graph": {
-    "hyperedges": [
-      {
-        "id": "h1",
-        "label": "Feature Engineering & Classification Pipeline",
-        "nodes": [
-          "feature_engineering",
-          "n_actividades_online",
-          "frecuencia_internet_feature",
-          "gradient_boosting_model",
-          "behavior_dominates_demographics"
-        ],
-        "relation": "form",
-        "confidence": "EXTRACTED",
-        "confidence_score": 0.95
-      },
-      {
-        "id": "h2",
-        "label": "Data Processing & Skills Classification",
-        "nodes": [
-          "eaui2026_v3_ipynb",
-          "gse_derivation",
-          "data_pipeline",
-          "nivel_habilidades",
-          "skill_classification_hierarchy"
-        ],
-        "relation": "form",
-        "confidence": "EXTRACTED",
-        "confidence_score": 0.95
-      },
-      {
-        "id": "h3",
-        "label": "Policy Implications of Feature Importance",
-        "nodes": [
-          "behavior_dominates_demographics",
-          "access_not_bottleneck",
-          "resilience_finding",
-          "permutation_importance"
-        ],
-        "relation": "participate_in",
-        "confidence": "INFERRED",
-        "confidence_score": 0.85
-      }
-    ]
-  },
+  "graph": {},
   "nodes": [
     {
-      "label": "eaui2026_v3.ipynb",
+      "label": "generar_diccionario_csv.py",
       "file_type": "code",
-      "source_file": "eaui2026_v3.ipynb",
-      "source_location": "notebook root",
-      "id": "eaui2026_v3_ipynb",
-      "community": 0,
-      "norm_label": "eaui2026_v3.ipynb"
+      "source_file": "generar_diccionario_csv.py",
+      "source_location": "L1",
+      "id": "generar_diccionario_csv_py",
+      "community": 8,
+      "norm_label": "generar_diccionario_csv.py"
     },
     {
-      "label": "SHAP Analysis: Explicabilidad del Modelo",
+      "label": "generar_diccionario_variables.js",
+      "file_type": "code",
+      "source_file": "generar_diccionario_variables.js",
+      "source_location": "L1",
+      "id": "generar_diccionario_variables_js",
+      "community": 7,
+      "norm_label": "generar_diccionario_variables.js"
+    },
+    {
+      "label": "createVariableSection()",
+      "file_type": "code",
+      "source_file": "generar_diccionario_variables.js",
+      "source_location": "L461",
+      "id": "generar_diccionario_variables_createvariablesection",
+      "community": 7,
+      "norm_label": "createvariablesection()"
+    },
+    {
+      "label": "generar_informe.js",
+      "file_type": "code",
+      "source_file": "generar_informe.js",
+      "source_location": "L1",
+      "id": "generar_informe_js",
+      "community": 9,
+      "norm_label": "generar_informe.js"
+    },
+    {
+      "label": "EAUI 2026 Analysis Plan",
       "file_type": "document",
-      "source_file": "SHAP_ANALYSIS.md",
-      "source_location": null,
-      "id": "shap_analysis",
+      "source_file": "PLAN_ANALISIS_EAUI2026.md",
+      "source_location": "\u00a70-6",
+      "source_url": null,
+      "captured_at": "2026-05-03",
+      "author": null,
+      "contributor": null,
+      "id": "plan_eaui2026",
+      "community": 0,
+      "norm_label": "eaui 2026 analysis plan"
+    },
+    {
+      "label": "Target Variables (Outcomes)",
+      "file_type": "rationale",
+      "source_file": "PLAN_ANALISIS_EAUI2026.md",
+      "source_location": "\u00a70 Variables objetivo",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "plan_outcomes",
+      "community": 0,
+      "norm_label": "target variables (outcomes)"
+    },
+    {
+      "label": "Structural Predictors",
+      "file_type": "rationale",
+      "source_file": "PLAN_ANALISIS_EAUI2026.md",
+      "source_location": "\u00a70 Predictores estructurales",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "plan_predictors",
+      "community": 0,
+      "norm_label": "structural predictors"
+    },
+    {
+      "label": "Expansion Factors (fe_hogar, fe_personas)",
+      "file_type": "rationale",
+      "source_file": "PLAN_ANALISIS_EAUI2026.md",
+      "source_location": "\u00a70 Factores de expansi\u00f3n",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "plan_expansion_factors",
+      "community": 0,
+      "norm_label": "expansion factors (fe_hogar, fe_personas)"
+    },
+    {
+      "label": "Block 1: Bivariate Descriptive Analysis",
+      "file_type": "rationale",
+      "source_file": "PLAN_ANALISIS_EAUI2026.md",
+      "source_location": "\u00a71",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "plan_bivariate_analysis",
       "community": 3,
-      "norm_label": "shap analysis: explicabilidad del modelo"
+      "norm_label": "block 1: bivariate descriptive analysis"
     },
     {
-      "label": "Modelo de Clasificaci\u00f3n Mejorado",
-      "file_type": "document",
-      "source_file": "CLASSIFICATION_MODEL_IMPROVED.md",
-      "source_location": null,
-      "id": "classification_model_improved",
-      "community": 1,
-      "norm_label": "modelo de clasificacion mejorado"
-    },
-    {
-      "label": "An\u00e1lisis Completo EAUI 2026",
-      "file_type": "document",
-      "source_file": "ANALYSIS_COMPLETE.md",
-      "source_location": null,
-      "id": "analysis_complete",
-      "community": 2,
-      "norm_label": "analisis completo eaui 2026"
-    },
-    {
-      "label": "EAUI Subtel Data Graph & Resilience Analysis",
-      "file_type": "document",
-      "source_file": "GRAPH_INSIGHTS.md",
-      "source_location": null,
-      "id": "graph_insights",
+      "label": "Block 2: Multivariate Analysis (MCA, PCA, Clustering)",
+      "file_type": "rationale",
+      "source_file": "PLAN_ANALISIS_EAUI2026.md",
+      "source_location": "\u00a72",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "plan_multivariate",
       "community": 0,
-      "norm_label": "eaui subtel data graph & resilience analysis"
+      "norm_label": "block 2: multivariate analysis (mca, pca, clustering)"
     },
     {
-      "label": "EAUI 2026: Resumen Ejecutivo",
-      "file_type": "document",
-      "source_file": "SUMMARY.md",
-      "source_location": null,
-      "id": "summary",
-      "community": 2,
-      "norm_label": "eaui 2026: resumen ejecutivo"
+      "label": "Block 3: Inferential Analysis (Hypothesis Testing, Regression)",
+      "file_type": "rationale",
+      "source_file": "PLAN_ANALISIS_EAUI2026.md",
+      "source_location": "\u00a73",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "plan_inferential",
+      "community": 0,
+      "norm_label": "block 3: inferential analysis (hypothesis testing, regression)"
     },
     {
-      "label": "EAUI 2026: An\u00e1lisis Completo - README",
-      "file_type": "document",
-      "source_file": "README_ANALYSIS.md",
-      "source_location": null,
-      "id": "readme_analysis",
-      "community": 4,
-      "norm_label": "eaui 2026: analisis completo - readme"
-    },
-    {
-      "label": "Graphify Knowledge Graph Report",
-      "file_type": "document",
-      "source_file": "GRAPH_REPORT.md",
-      "source_location": null,
-      "id": "graph_report",
+      "label": "Block 4: Supervised Machine Learning (Classification, Interpretation)",
+      "file_type": "rationale",
+      "source_file": "PLAN_ANALISIS_EAUI2026.md",
+      "source_location": "\u00a74",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "plan_ml_supervised",
       "community": 5,
-      "norm_label": "graphify knowledge graph report"
+      "norm_label": "block 4: supervised machine learning (classification, interpretation)"
     },
     {
-      "label": "n_actividades_online (Feature)",
+      "label": "SHAP Values and Permutation Importance",
       "file_type": "rationale",
-      "source_file": "CLASSIFICATION_MODEL_IMPROVED.md",
-      "source_location": "Secci\u00f3n: Las 4 Nuevas Variables",
-      "rationale": "Variable de comportamiento que cuenta actividades online (Q21_1 a Q21_44), rango 0-41. Importancia: 42%. Es el predictor m\u00e1s importante del modelo mejorado.",
-      "id": "n_actividades_online",
-      "community": 1,
-      "norm_label": "n_actividades_online (feature)"
+      "source_file": "PLAN_ANALISIS_EAUI2026.md",
+      "source_location": "\u00a74.5",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "plan_shap_interpretation",
+      "community": 5,
+      "norm_label": "shap values and permutation importance"
     },
     {
-      "label": "Permutation Importance (M\u00e9todo)",
-      "file_type": "rationale",
-      "source_file": "SHAP_ANALYSIS.md",
-      "source_location": "Secci\u00f3n: Comparaci\u00f3n sklearn vs Permutation Importance",
-      "rationale": "T\u00e9cnica robusta para medir importancia de features basada en el cambio en error cuando se permuta una variable. M\u00e1s acertada que sklearn para detectar multicolinealidad y efectos mediados.",
-      "id": "permutation_importance",
-      "community": 3,
-      "norm_label": "permutation importance (metodo)"
-    },
-    {
-      "label": "Feature Engineering: 4 Variables de Comportamiento",
-      "file_type": "rationale",
-      "source_file": "SUMMARY.md",
-      "source_location": "Secci\u00f3n: Feature Engineering: Las 4 Variables Nuevas",
-      "rationale": "Proceso de derivaci\u00f3n de n_actividades_online, frecuencia_internet_num, tiempo_internet_num, n_dispositivos. Mejora model accuracy en 10.5 puntos porcentuales.",
-      "id": "feature_engineering",
-      "community": 1,
-      "norm_label": "feature engineering: 4 variables de comportamiento"
-    },
-    {
-      "label": "Gradient Boosting Classifier",
-      "file_type": "rationale",
-      "source_file": "CLASSIFICATION_MODEL_IMPROVED.md",
-      "source_location": "Secci\u00f3n: Modelo Original vs Mejorado",
-      "rationale": "Algoritmo de clasificaci\u00f3n con 100 estimadores, max_depth=5. Alcanza 63.5% accuracy en modelo mejorado (+10.5 pp mejora).",
-      "id": "gradient_boosting_model",
-      "community": 1,
-      "norm_label": "gradient boosting classifier"
-    },
-    {
-      "label": "GSE Derivation (Matriz 2x6)",
-      "file_type": "rationale",
-      "source_file": "GRAPH_INSIGHTS.md",
-      "source_location": "Secci\u00f3n: Stage 1: GSE Derivation (Cell 4)",
-      "rationale": "Tabla de cruce educaci\u00f3n (A10, 4 niveles) x ingreso (6 niveles) que produce 6 categor\u00edas GSE ordenadas (AB>C1>C2>C3>D>E). Controla por confounding entre educaci\u00f3n e ingreso.",
-      "id": "gse_derivation",
-      "community": 0,
-      "norm_label": "gse derivation (matriz 2x6)"
-    },
-    {
-      "label": "nivel_habilidades (Target Variable)",
-      "file_type": "rationale",
-      "source_file": "GRAPH_INSIGHTS.md",
-      "source_location": "Secci\u00f3n: Stage 4: Digital Skills Classification (Cell 26)",
-      "rationale": "Variable de salida: 4 clases jer\u00e1rquicas (Avanzado, Intermedio, B\u00e1sico, Sin habilidades) derivadas de Q8_1:Q8_19. Distribuci\u00f3n: 31% Avanzado, 44.5% Intermedio, 16.1% B\u00e1sico, 8.4% Sin.",
-      "id": "nivel_habilidades",
-      "community": 0,
-      "norm_label": "nivel_habilidades (target variable)"
-    },
-    {
-      "label": "Resilience: Youth Overcomes Barriers",
-      "file_type": "rationale",
-      "source_file": "GRAPH_INSIGHTS.md",
-      "source_location": "Secci\u00f3n: Age is the Game-Changer",
-      "rationale": "J\u00f3venes (18-29) en segmentos rurales+bajo+educaci\u00f3n media alcanzan 49.4% habilidades avanzadas, superando expectativas (32.8% promedio del segmento). Sugiere que edad es m\u00e1s predictivo que factores socioecon\u00f3micos.",
-      "id": "resilience_finding",
-      "community": 2,
-      "norm_label": "resilience: youth overcomes barriers"
-    },
-    {
-      "label": "Access is NOT the Bottleneck (Policy Insight)",
-      "file_type": "rationale",
-      "source_file": "SHAP_ANALYSIS.md",
-      "source_location": "Secci\u00f3n: Implicaciones para Policy - Access is NOT the bottleneck",
-      "rationale": "acceso_internet contribuye -0.2% en permutation importance (negativa). Entre usuarios conectados (97% del dataset), variaci\u00f3n es 100% comportamiento. Dar internet sin literacidad no sirve.",
-      "id": "access_not_bottleneck",
-      "community": 2,
-      "norm_label": "access is not the bottleneck (policy insight)"
-    },
-    {
-      "label": "Multicolinearity: GSE mediada por actividades",
-      "file_type": "rationale",
-      "source_file": "SHAP_ANALYSIS.md",
-      "source_location": "Secci\u00f3n: Scenario B - Variable medidora de otra",
-      "rationale": "GSE subestimada por sklearn (6%) vs permutation (1.1%). GSE correlaciona con skills a trav\u00e9s de n_actividades_online. Efecto mediado: GSE\u2192actividades\u2192skills.",
-      "id": "multicolinearity_issue",
-      "community": 3,
-      "norm_label": "multicolinearity: gse mediada por actividades"
-    },
-    {
-      "label": "diccionario_variables.csv",
+      "label": "EAUI Subtel Project Overview",
       "file_type": "document",
-      "source_file": "diccionario_variables.csv",
-      "source_location": null,
-      "id": "diccionario_variables",
-      "community": 6,
-      "norm_label": "diccionario_variables.csv"
-    },
-    {
-      "label": "Data Processing Pipeline",
-      "file_type": "rationale",
-      "source_file": "ANALYSIS_COMPLETE.md",
-      "source_location": "Secci\u00f3n: Pipeline de Datos",
-      "rationale": "Secuencia: Load SPSS (Cell 2) \u2192 GSE (Cell 4) \u2192 Rename&Recode (Cells 6,12,14,16-18) \u2192 Skills Classification (Cell 26) \u2192 Analysis Functions (Cell 20) \u2192 Feature Engineering [NEW] \u2192 Classification Model [NEW]",
-      "id": "data_pipeline",
+      "source_file": "CLAUDE.md",
+      "source_location": "Project Overview",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "claude_eaui_project",
       "community": 4,
-      "norm_label": "data processing pipeline"
+      "norm_label": "eaui subtel project overview"
     },
     {
-      "label": "Behavior > Demographics (Key Finding)",
+      "label": "eaui2026_v3.ipynb (Latest Version)",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "Primary work",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "claude_notebook_v3",
+      "community": 4,
+      "norm_label": "eaui2026_v3.ipynb (latest version)"
+    },
+    {
+      "label": "Data Directory Structure",
+      "file_type": "rationale",
+      "source_file": "CLAUDE.md",
+      "source_location": "Data section",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "claude_data_directory",
+      "community": 4,
+      "norm_label": "data directory structure"
+    },
+    {
+      "label": "pyreadstat Library (SPSS Reader)",
+      "file_type": "rationale",
+      "source_file": "CLAUDE.md",
+      "source_location": "Python Dependencies",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "claude_pyreadstat",
+      "community": 4,
+      "norm_label": "pyreadstat library (spss reader)"
+    },
+    {
+      "label": "Summary: Model Improvement Achievements",
+      "file_type": "document",
+      "source_file": "SUMMARY.md",
+      "source_location": "Logros Principales",
+      "source_url": null,
+      "captured_at": "2026-05-03",
+      "author": null,
+      "contributor": null,
+      "id": "summary_achievements",
+      "community": 1,
+      "norm_label": "summary: model improvement achievements"
+    },
+    {
+      "label": "Baseline Classification Model (57.2% accuracy)",
       "file_type": "rationale",
       "source_file": "SUMMARY.md",
-      "source_location": "Secci\u00f3n: Insights Principales - Behavior > Demographics",
-      "rationale": "n_actividades_online (42%) > edad (18%) > gse (6%). Las 4 variables de comportamiento suman 68% de importancia, demogr\u00e1ficas solo 32%. Lo que haces importa m\u00e1s que qui\u00e9n eres.",
-      "id": "behavior_dominates_demographics",
+      "source_location": "\u00a73 Modelo Original",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "summary_baseline_model",
+      "community": 1,
+      "norm_label": "baseline classification model (57.2% accuracy)"
+    },
+    {
+      "label": "Improved Classification Model (66.4% accuracy)",
+      "file_type": "rationale",
+      "source_file": "SUMMARY.md",
+      "source_location": "\u00a74 Modelo Mejorado",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "summary_improved_model",
+      "community": 1,
+      "norm_label": "improved classification model (66.4% accuracy)"
+    },
+    {
+      "label": "Feature Engineering: 4 New Behavioral Variables",
+      "file_type": "rationale",
+      "source_file": "SUMMARY.md",
+      "source_location": "\u00a75 Feature Engineering",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "summary_feature_engineering",
+      "community": 1,
+      "norm_label": "feature engineering: 4 new behavioral variables"
+    },
+    {
+      "label": "Key Insight: Behavior > Demographics (68% vs 32%)",
+      "file_type": "rationale",
+      "source_file": "SUMMARY.md",
+      "source_location": "\u00a76 Conclusi\u00f3n",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "summary_key_insight_behavior",
+      "community": 1,
+      "norm_label": "key insight: behavior > demographics (68% vs 32%)"
+    },
+    {
+      "label": "Cross-Tabulation Analysis",
+      "file_type": "rationale",
+      "source_file": "README_ANALYSIS.md",
+      "source_location": "\u00a72",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "readme_cross_tabulation",
+      "community": 3,
+      "norm_label": "cross-tabulation analysis"
+    },
+    {
+      "label": "Resilience Analysis (Youth Defying Barriers)",
+      "file_type": "rationale",
+      "source_file": "README_ANALYSIS.md",
+      "source_location": "\u00a73",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "readme_resilience",
+      "community": 3,
+      "norm_label": "resilience analysis (youth defying barriers)"
+    },
+    {
+      "label": "Graphify: Project Architecture Analysis",
+      "file_type": "rationale",
+      "source_file": "README_ANALYSIS.md",
+      "source_location": "\u00a71",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "readme_graphify",
+      "community": 3,
+      "norm_label": "graphify: project architecture analysis"
+    },
+    {
+      "label": "Classification Model (Original): 6 Features",
+      "file_type": "document",
+      "source_file": "CLASSIFICATION_MODEL.md",
+      "source_location": "Overview",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "classif_model_original",
       "community": 2,
-      "norm_label": "behavior > demographics (key finding)"
+      "norm_label": "classification model (original): 6 features"
     },
     {
-      "label": "Urban-Rural Digital Gap",
+      "label": "Gradient Boosting Classifier (57.2%)",
       "file_type": "rationale",
-      "source_file": "GRAPH_INSIGHTS.md",
-      "source_location": "Secci\u00f3n: Urban/Rural Divide is Substantial",
-      "rationale": "Diferencia de 10pp: urbano 42.4% avanzado vs rural 32.5%. Persiste incluso controlando por ingreso/educaci\u00f3n, sugiriendo geograf\u00eda como barrera independiente.",
-      "id": "urban_rural_gap",
-      "community": 0,
-      "norm_label": "urban-rural digital gap"
+      "source_file": "CLASSIFICATION_MODEL.md",
+      "source_location": "\u00a73",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "classif_gradient_boosting",
+      "community": 2,
+      "norm_label": "gradient boosting classifier (57.2%)"
     },
     {
-      "label": "Skill Classification: Hierarchical Levels",
+      "label": "Feature Importance: Age Dominates (46.4%)",
       "file_type": "rationale",
-      "source_file": "GRAPH_INSIGHTS.md",
-      "source_location": "Secci\u00f3n: Stage 4: Digital Skills Classification",
-      "rationale": "Jerarqu\u00eda: Avanzado (seguridad, SO, web) > Intermedio (ofim\u00e1tica, creaci\u00f3n, pagos) > B\u00e1sico (streaming, email, redes) > Sin habilidades. M\u00e1ximo nivel alcanzado en Q8_1:Q8_19.",
-      "id": "skill_classification_hierarchy",
-      "community": 0,
-      "norm_label": "skill classification: hierarchical levels"
+      "source_file": "CLASSIFICATION_MODEL.md",
+      "source_location": "\u00a73 Feature Importance",
+      "source_url": null,
+      "captured_at": null,
+      "contributor": null,
+      "author": null,
+      "id": "classif_feature_importance",
+      "community": 2,
+      "norm_label": "feature importance: age dominates (46.4%)"
     },
     {
-      "label": "Income Stratification (3 Groups)",
+      "label": "Permutation Importance vs sklearn Feature Importance",
       "file_type": "rationale",
-      "source_file": "GRAPH_INSIGHTS.md",
-      "source_location": "Secci\u00f3n: Stage 3: Income Stratification (Cell 18)",
-      "rationale": "A12_1 (c\u00f3digo de ingreso) convertido a punto estimado, luego cortado en 3 grupos: Bajo, Medio, Alto. Multiplicador 2x: Alto (62.5% avanzado) vs Bajo (30.8%).",
-      "id": "income_stratification",
-      "community": 0,
-      "norm_label": "income stratification (3 groups)"
+      "source_file": "SHAP_ANALYSIS.md",
+      "source_location": "\u00a7II",
+      "source_url": null,
+      "captured_at": "2026-05-03",
+      "author": null,
+      "contributor": null,
+      "id": "shap_permutation_importance",
+      "community": 2,
+      "norm_label": "permutation importance vs sklearn feature importance"
     },
     {
-      "label": "Q8_1:Q8_19 (Skills Survey Items)",
+      "label": "N_actividades_online: 57.5% True Importance",
       "file_type": "rationale",
-      "source_file": "GRAPH_INSIGHTS.md",
-      "source_location": "Secci\u00f3n: Stage 4: Digital Skills Classification",
-      "rationale": "19 \u00edtems binarios de habilidades digitales: Q8_1-3 ofim\u00e1tica, Q8_4-6 configuraci\u00f3n, Q8_7-9 avanzado, Q8_10-19 b\u00e1sico/consumo.",
-      "id": "q8_skills_items",
-      "community": 0,
-      "norm_label": "q8_1:q8_19 (skills survey items)"
-    },
-    {
-      "label": "Q21_1:Q21_44 (Online Activities)",
-      "file_type": "rationale",
-      "source_file": "CLASSIFICATION_MODEL_IMPROVED.md",
-      "source_location": "Secci\u00f3n: Ingenier\u00eda de Features - n_actividades_online",
-      "rationale": "41 \u00edtems binarios de actividades online: redes sociales, email, transacciones, b\u00fasqueda, entretenimiento, trabajo remoto. Conteo = n_actividades_online feature.",
-      "id": "q21_activities_items",
+      "source_file": "SHAP_ANALYSIS.md",
+      "source_location": "\u00a7III.1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "shap_activities_dominant",
       "community": 1,
-      "norm_label": "q21_1:q21_44 (online activities)"
+      "norm_label": "n_actividades_online: 57.5% true importance"
     },
     {
-      "label": "frecuencia_internet_num (Feature)",
+      "label": "GSE Effect Mediated Through Behavior (6% \u2192 1.1%)",
       "file_type": "rationale",
-      "source_file": "CLASSIFICATION_MODEL_IMPROVED.md",
-      "source_location": "Secci\u00f3n: Las 4 Nuevas Variables - frecuencia_internet_num",
-      "rationale": "Ordinal 0-4 recodificado de Q10 (frecuencia de acceso). Importancia: 13.2%. Proxy para exposici\u00f3n al internet.",
-      "id": "frecuencia_internet_feature",
-      "community": 1,
-      "norm_label": "frecuencia_internet_num (feature)"
+      "source_file": "SHAP_ANALYSIS.md",
+      "source_location": "\u00a7III.2",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "shap_gse_mediated",
+      "community": 2,
+      "norm_label": "gse effect mediated through behavior (6% \u2192 1.1%)"
     },
     {
-      "label": "Clase B\u00e1sico: Persistent Classification Problem",
+      "label": "Internet Access Almost Irrelevant (-0.2%)",
       "file_type": "rationale",
-      "source_file": "CLASSIFICATION_MODEL_IMPROVED.md",
-      "source_location": "Secci\u00f3n: Limitaciones Persistentes - Clase B\u00e1sico Sigue Siendo Dif\u00edcil",
-      "rationale": "F1-score 0.50 vs 0.65 otras clases. Overlap con Intermedio (email vs Excel) y Sin habilidades. Bajo recall (46%). Requiere SMOTE o redefinici\u00f3n.",
-      "id": "clase_basico_problem",
+      "source_file": "SHAP_ANALYSIS.md",
+      "source_location": "\u00a7III.3, Implicaciones \u00a7IV.1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "shap_access_irrelevant",
+      "community": 2,
+      "norm_label": "internet access almost irrelevant (-0.2%)"
+    },
+    {
+      "label": "GSE: 3.3\u00d7 Multiplier (AB 70% vs E 21% Advanced)",
+      "file_type": "rationale",
+      "source_file": "GRAPH_INSIGHTS.md",
+      "source_location": "Cross-Tabulation \u00a71",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "graph_gse_predictor",
+      "community": 6,
+      "norm_label": "gse: 3.3\u00d7 multiplier (ab 70% vs e 21% advanced)"
+    },
+    {
+      "label": "Head Education: Parental Modeling Effect (66% university vs 26% no education)",
+      "file_type": "rationale",
+      "source_file": "GRAPH_INSIGHTS.md",
+      "source_location": "Cross-Tabulation \u00a72",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "graph_education_head",
+      "community": 6,
+      "norm_label": "head education: parental modeling effect (66% university vs 26% no education)"
+    },
+    {
+      "label": "Urban/Rural Gap: 10pp (42% vs 32% advanced)",
+      "file_type": "rationale",
+      "source_file": "GRAPH_INSIGHTS.md",
+      "source_location": "Cross-Tabulation \u00a73",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "graph_urban_rural",
+      "community": 6,
+      "norm_label": "urban/rural gap: 10pp (42% vs 32% advanced)"
+    },
+    {
+      "label": "Resilience Peak: 18-29 in Rural+Low+Secondary (49% advanced)",
+      "file_type": "rationale",
+      "source_file": "GRAPH_INSIGHTS.md",
+      "source_location": "Resilience Analysis \u00a7Age is Game-Changer",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "graph_resilience_youth",
+      "community": 10,
+      "norm_label": "resilience peak: 18-29 in rural+low+secondary (49% advanced)"
+    },
+    {
+      "label": "Internet Access: Binary Gate (80% without = zero skills)",
+      "file_type": "rationale",
+      "source_file": "GRAPH_INSIGHTS.md",
+      "source_location": "Cross-Tabulation \u00a75",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "graph_internet_binary_gate",
+      "community": 11,
+      "norm_label": "internet access: binary gate (80% without = zero skills)"
+    },
+    {
+      "label": "eaui2026_v3.ipynb: Pipeline Orchestrator (29 nodes, 9 communities)",
+      "file_type": "rationale",
+      "source_file": "GRAPH_INSIGHTS.md",
+      "source_location": "Knowledge Graph Architecture, Notebook Architecture \u00a7",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "graph_pipeline_orchestration",
+      "community": 12,
+      "norm_label": "eaui2026_v3.ipynb: pipeline orchestrator (29 nodes, 9 communities)"
+    },
+    {
+      "label": "GSE Derivation (Cell 4): Education \u00d7 Income Matrix",
+      "file_type": "rationale",
+      "source_file": "GRAPH_INSIGHTS.md",
+      "source_location": "Variable Recoding Pipeline \u00a71",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "graph_gse_derivation_cell4",
+      "community": 13,
+      "norm_label": "gse derivation (cell 4): education \u00d7 income matrix"
+    },
+    {
+      "label": "Skills Classification (Cell 26): B\u00e1sico/Intermedio/Avanzado Hierarchy",
+      "file_type": "rationale",
+      "source_file": "GRAPH_INSIGHTS.md",
+      "source_location": "Variable Recoding Pipeline \u00a74",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "graph_skills_classification_cell26",
+      "community": 14,
+      "norm_label": "skills classification (cell 26): basico/intermedio/avanzado hierarchy"
+    },
+    {
+      "label": "Bloque 1: Chi-square & Cram\u00e9r's V on 28 bivariates",
+      "file_type": "rationale",
+      "source_file": "eaui2026_analisis_bloques.ipynb",
+      "source_location": "Bloque 1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "bloque1_bivariate_chi2",
+      "community": 3,
+      "norm_label": "bloque 1: chi-square & cramer's v on 28 bivariates"
+    },
+    {
+      "label": "Bloque 2: MCA (Q8), PCA (5 numeric), FAMD (mixed), clustering",
+      "file_type": "rationale",
+      "source_file": "eaui2026_analisis_bloques.ipynb",
+      "source_location": "Bloque 2",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "bloque2_mca_pca_famd",
       "community": 0,
-      "norm_label": "clase basico: persistent classification problem"
+      "norm_label": "bloque 2: mca (q8), pca (5 numeric), famd (mixed), clustering"
+    },
+    {
+      "label": "Bloque 3: 95% CI, t-tests, logit, ordinal regression, WLS",
+      "file_type": "rationale",
+      "source_file": "eaui2026_analisis_bloques.ipynb",
+      "source_location": "Bloque 3",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "bloque3_inference",
+      "community": 0,
+      "norm_label": "bloque 3: 95% ci, t-tests, logit, ordinal regression, wls"
+    },
+    {
+      "label": "Bloque 4: 6 RF models, SHAP interpretation",
+      "file_type": "rationale",
+      "source_file": "eaui2026_analisis_bloques.ipynb",
+      "source_location": "Bloque 4",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "bloque4_ml_shap",
+      "community": 5,
+      "norm_label": "bloque 4: 6 rf models, shap interpretation"
+    },
+    {
+      "label": "Bloque 5: Executive summary, 15 insights, recommendations, limitations",
+      "file_type": "rationale",
+      "source_file": "eaui2026_analisis_bloques.ipynb",
+      "source_location": "Bloque 5",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "bloque5_synthesis",
+      "community": 0,
+      "norm_label": "bloque 5: executive summary, 15 insights, recommendations, limitations"
     }
   ],
   "links": [
     {
-      "relation": "references",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "generar_diccionario_variables.js",
+      "source_location": "L461",
+      "weight": 1.0,
+      "source": "generar_diccionario_variables_js",
+      "target": "generar_diccionario_variables_createvariablesection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "depends_on",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "merged",
-      "source": "eaui2026_v3_ipynb",
-      "target": "data_pipeline"
+      "source_file": "PLAN_ANALISIS_EAUI2026.md",
+      "source_location": "\u00a70",
+      "weight": 1.0,
+      "source": "plan_eaui2026",
+      "target": "plan_outcomes"
     },
     {
-      "relation": "references",
+      "relation": "depends_on",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "merged",
-      "source": "eaui2026_v3_ipynb",
-      "target": "gse_derivation"
+      "source_file": "PLAN_ANALISIS_EAUI2026.md",
+      "source_location": "\u00a70",
+      "weight": 1.0,
+      "source": "plan_eaui2026",
+      "target": "plan_predictors"
     },
     {
-      "relation": "references",
+      "relation": "depends_on",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "merged",
-      "source": "eaui2026_v3_ipynb",
-      "target": "nivel_habilidades"
+      "source_file": "PLAN_ANALISIS_EAUI2026.md",
+      "source_location": "\u00a70",
+      "weight": 1.0,
+      "source": "plan_eaui2026",
+      "target": "plan_expansion_factors"
     },
     {
-      "relation": "references",
+      "relation": "depends_on",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "merged",
-      "source": "shap_analysis",
-      "target": "permutation_importance"
+      "source_file": "PLAN_ANALISIS_EAUI2026.md",
+      "source_location": "\u00a71",
+      "weight": 1.0,
+      "source": "plan_eaui2026",
+      "target": "plan_bivariate_analysis"
     },
     {
-      "relation": "references",
+      "relation": "depends_on",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "merged",
-      "source": "shap_analysis",
-      "target": "access_not_bottleneck"
+      "source_file": "PLAN_ANALISIS_EAUI2026.md",
+      "source_location": "\u00a72",
+      "weight": 1.0,
+      "source": "plan_eaui2026",
+      "target": "plan_multivariate"
     },
     {
-      "relation": "references",
+      "relation": "depends_on",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "merged",
-      "source": "shap_analysis",
-      "target": "multicolinearity_issue"
+      "source_file": "PLAN_ANALISIS_EAUI2026.md",
+      "source_location": "\u00a73",
+      "weight": 1.0,
+      "source": "plan_eaui2026",
+      "target": "plan_inferential"
     },
     {
-      "relation": "references",
+      "relation": "depends_on",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "merged",
-      "source": "shap_analysis",
-      "target": "gradient_boosting_model"
+      "source_file": "PLAN_ANALISIS_EAUI2026.md",
+      "source_location": "\u00a74",
+      "weight": 1.0,
+      "source": "plan_eaui2026",
+      "target": "plan_ml_supervised"
     },
     {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "merged",
-      "source": "classification_model_improved",
-      "target": "gradient_boosting_model"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "merged",
-      "source": "classification_model_improved",
-      "target": "feature_engineering"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "merged",
-      "source": "classification_model_improved",
-      "target": "n_actividades_online"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "merged",
-      "source": "readme_analysis",
-      "target": "classification_model_improved"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "merged",
-      "source": "analysis_complete",
-      "target": "data_pipeline"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "merged",
-      "source": "analysis_complete",
-      "target": "behavior_dominates_demographics"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "merged",
-      "source": "analysis_complete",
-      "target": "resilience_finding"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "merged",
-      "source": "graph_insights",
-      "target": "gse_derivation"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "merged",
-      "source": "graph_insights",
-      "target": "skill_classification_hierarchy"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "merged",
-      "source": "graph_insights",
-      "target": "urban_rural_gap"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "merged",
-      "source": "graph_insights",
-      "target": "resilience_finding"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "merged",
-      "source": "summary",
-      "target": "feature_engineering"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "merged",
-      "source": "summary",
-      "target": "behavior_dominates_demographics"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "merged",
-      "source": "readme_analysis",
-      "target": "data_pipeline"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "merged",
-      "source": "feature_engineering",
-      "target": "n_actividades_online"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "merged",
-      "source": "n_actividades_online",
-      "target": "behavior_dominates_demographics"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "merged",
-      "source": "n_actividades_online",
-      "target": "q21_activities_items"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "merged",
-      "source": "permutation_importance",
-      "target": "multicolinearity_issue"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "merged",
-      "source": "feature_engineering",
-      "target": "frecuencia_internet_feature"
-    },
-    {
-      "relation": "references",
+      "relation": "rationale_for",
       "confidence": "INFERRED",
       "confidence_score": 0.95,
-      "source_file": "merged",
-      "source": "gradient_boosting_model",
-      "target": "feature_engineering"
+      "source_file": "PLAN_ANALISIS_EAUI2026.md",
+      "source_location": "\u00a75 (implicit)",
+      "weight": 1.0,
+      "source": "plan_eaui2026",
+      "target": "bloque5_synthesis"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN_ANALISIS_EAUI2026.md",
+      "source_location": "\u00a71",
+      "weight": 1.0,
+      "source": "plan_bivariate_analysis",
+      "target": "bloque1_bivariate_chi2"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN_ANALISIS_EAUI2026.md",
+      "source_location": "\u00a72",
+      "weight": 1.0,
+      "source": "plan_multivariate",
+      "target": "bloque2_mca_pca_famd"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN_ANALISIS_EAUI2026.md",
+      "source_location": "\u00a73",
+      "weight": 1.0,
+      "source": "plan_inferential",
+      "target": "bloque3_inference"
+    },
+    {
+      "relation": "depends_on",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN_ANALISIS_EAUI2026.md",
+      "source_location": "\u00a74.5",
+      "weight": 1.0,
+      "source": "plan_ml_supervised",
+      "target": "plan_shap_interpretation"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN_ANALISIS_EAUI2026.md",
+      "source_location": "\u00a74",
+      "weight": 1.0,
+      "source": "plan_ml_supervised",
+      "target": "bloque4_ml_shap"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": "Primary work",
+      "weight": 1.0,
+      "source": "claude_eaui_project",
+      "target": "claude_notebook_v3"
+    },
+    {
+      "relation": "depends_on",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": "Data section",
+      "weight": 1.0,
+      "source": "claude_eaui_project",
+      "target": "claude_data_directory"
+    },
+    {
+      "relation": "depends_on",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": "Working with Notebooks",
+      "weight": 1.0,
+      "source": "claude_notebook_v3",
+      "target": "claude_pyreadstat"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SUMMARY.md",
+      "source_location": "\u00a73",
+      "weight": 1.0,
+      "source": "summary_achievements",
+      "target": "summary_baseline_model"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SUMMARY.md",
+      "source_location": "\u00a74",
+      "weight": 1.0,
+      "source": "summary_achievements",
+      "target": "summary_improved_model"
+    },
+    {
+      "relation": "depends_on",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SUMMARY.md",
+      "source_location": "\u00a74, \u00a75",
+      "weight": 1.0,
+      "source": "summary_improved_model",
+      "target": "summary_feature_engineering"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SUMMARY.md",
+      "source_location": "\u00a75, \u00a76",
+      "weight": 1.0,
+      "source": "summary_feature_engineering",
+      "target": "summary_key_insight_behavior"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "SHAP_ANALYSIS.md",
+      "source_location": "\u00a7III.1",
+      "weight": 1.0,
+      "source": "shap_activities_dominant",
+      "target": "summary_key_insight_behavior"
+    },
+    {
+      "relation": "depends_on",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "README_ANALYSIS.md",
+      "source_location": "\u00a7Relaciones",
+      "weight": 1.0,
+      "source": "readme_graphify",
+      "target": "readme_cross_tabulation"
+    },
+    {
+      "relation": "depends_on",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "README_ANALYSIS.md",
+      "source_location": "\u00a7Relaciones",
+      "weight": 1.0,
+      "source": "readme_cross_tabulation",
+      "target": "readme_resilience"
     },
     {
       "relation": "conceptually_related_to",
       "confidence": "INFERRED",
       "confidence_score": 0.85,
-      "source_file": "merged",
-      "source": "gse_derivation",
-      "target": "multicolinearity_issue"
+      "source_file": "eaui2026_analisis_bloques.ipynb",
+      "source_location": "Bloque 1",
+      "weight": 1.0,
+      "source": "bloque1_bivariate_chi2",
+      "target": "readme_cross_tabulation"
     },
     {
-      "relation": "references",
+      "relation": "conceptually_related_to",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "merged",
-      "source": "nivel_habilidades",
-      "target": "skill_classification_hierarchy"
+      "source_file": "CLASSIFICATION_MODEL.md",
+      "source_location": "\u00a73",
+      "weight": 1.0,
+      "source": "classif_model_original",
+      "target": "classif_gradient_boosting"
     },
     {
-      "relation": "references",
+      "relation": "depends_on",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "merged",
-      "source": "clase_basico_problem",
-      "target": "nivel_habilidades"
+      "source_file": "CLASSIFICATION_MODEL.md",
+      "source_location": "\u00a73",
+      "weight": 1.0,
+      "source": "classif_gradient_boosting",
+      "target": "classif_feature_importance"
     },
     {
-      "relation": "semantically_similar_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.75,
-      "source_file": "merged",
-      "source": "resilience_finding",
-      "target": "behavior_dominates_demographics"
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SHAP_ANALYSIS.md",
+      "source_location": "\u00a7I",
+      "weight": 1.0,
+      "source": "classif_feature_importance",
+      "target": "shap_permutation_importance"
+    },
+    {
+      "relation": "depends_on",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SHAP_ANALYSIS.md",
+      "source_location": "\u00a7III.1",
+      "weight": 1.0,
+      "source": "shap_permutation_importance",
+      "target": "shap_activities_dominant"
+    },
+    {
+      "relation": "depends_on",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SHAP_ANALYSIS.md",
+      "source_location": "\u00a7III.2",
+      "weight": 1.0,
+      "source": "shap_permutation_importance",
+      "target": "shap_gse_mediated"
+    },
+    {
+      "relation": "depends_on",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SHAP_ANALYSIS.md",
+      "source_location": "\u00a7III.3",
+      "weight": 1.0,
+      "source": "shap_permutation_importance",
+      "target": "shap_access_irrelevant"
     },
     {
       "relation": "conceptually_related_to",
       "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "merged",
-      "source": "access_not_bottleneck",
-      "target": "behavior_dominates_demographics"
+      "confidence_score": 0.75,
+      "source_file": "GRAPH_INSIGHTS.md",
+      "source_location": "Cross-Tabulation",
+      "weight": 1.0,
+      "source": "graph_gse_predictor",
+      "target": "graph_urban_rural"
     },
     {
       "relation": "conceptually_related_to",
       "confidence": "INFERRED",
       "confidence_score": 0.75,
-      "source_file": "merged",
-      "source": "income_stratification",
-      "target": "urban_rural_gap"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "merged",
-      "source": "skill_classification_hierarchy",
-      "target": "q8_skills_items"
+      "source_file": "GRAPH_INSIGHTS.md",
+      "source_location": "Cross-Tabulation",
+      "weight": 1.0,
+      "source": "graph_gse_predictor",
+      "target": "graph_education_head"
     }
   ],
-  "hyperedges": [
-    {
-      "id": "h1",
-      "label": "Feature Engineering & Classification Pipeline",
-      "nodes": [
-        "feature_engineering",
-        "n_actividades_online",
-        "frecuencia_internet_feature",
-        "gradient_boosting_model",
-        "behavior_dominates_demographics"
-      ],
-      "relation": "form",
-      "confidence": "EXTRACTED",
-      "confidence_score": 0.95
-    },
-    {
-      "id": "h2",
-      "label": "Data Processing & Skills Classification",
-      "nodes": [
-        "eaui2026_v3_ipynb",
-        "gse_derivation",
-        "data_pipeline",
-        "nivel_habilidades",
-        "skill_classification_hierarchy"
-      ],
-      "relation": "form",
-      "confidence": "EXTRACTED",
-      "confidence_score": 0.95
-    },
-    {
-      "id": "h3",
-      "label": "Policy Implications of Feature Importance",
-      "nodes": [
-        "behavior_dominates_demographics",
-        "access_not_bottleneck",
-        "resilience_finding",
-        "permutation_importance"
-      ],
-      "relation": "participate_in",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85
-    }
-  ]
+  "hyperedges": [],
+  "built_at_commit": "be856b3e5471644ada625908f9dfd81c64bc1804"
 }
