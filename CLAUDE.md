@@ -5,6 +5,8 @@
 **Data:** SPSS (.sav), CSV, Excel | 5,000 cases × 587 variables  
 **Expansion factors:** fe_personas (person-level), fe_hogar (household-level)
 
+**Última reorganización:** 12 mayo 2026 (ver `ESTRUCTURA_PROYECTO.md` para layout actual)
+
 ## Quick Start
 
 ```bash
@@ -15,28 +17,33 @@ source ~/.pyenv/versions/datascience/bin/activate
 jupyter notebook
 
 # Open main notebook
-# → eaui2026_v3.ipynb (latest)
+# → eaui2026_analisis_bloques_ordenado.ipynb
 ```
 
 ## Project Structure
 
 ```
 .
-├── eaui2026_v*.ipynb          # Main processing notebooks (v3 is latest)
+├── eaui2026_analisis_bloques_ordenado.ipynb  ← NOTEBOOK PRINCIPAL (activo)
 ├── data/
 │   ├── sav/                   # Raw SPSS files (2008–2026)
 │   ├── csv/                   # CSV exports
-│   └── xlsx/                  # Excel files
+│   ├── xlsx/                  # Excel files
+│   ├── raw/                   # Datasets crudos adicionales
+│   └── processed/             # Datos procesados (salidas intermedias)
 ├── docs/
 │   ├── informe_final.pdf      # Final analysis report
 │   ├── PLAN_ANALISIS_EAUI2026.md
-│   ├── PLAN_UNIVARIADO_EAUI2026.md
+│   ├── diccionario/           # Data dictionaries
 │   └── ...
 ├── analysis/
-│   ├── documentation/         # Model docs, analysis guides
-│   └── ...
-├── diccionario_variables.csv  # Data dictionary
-└── .claude-os/                # Claude OS config
+│   ├── documentation/         # Model docs, analysis guides (final)
+│   ├── shap_ranking_habilidades.csv
+│   └── outputs/               # Visualizaciones procesadas
+├── notebooks/                 # Otros notebooks (si es que hay)
+├── ESTRUCTURA_PROYECTO.md     # Layout visual del proyecto
+├── CLAUDE.md                  # Este archivo
+└── _archive/                  # Histórico (versiones viejas, outputs, etc.)
 ```
 
 ## Data Dictionary
@@ -130,14 +137,17 @@ When raw SPSS files change, re-run notebook top-to-bottom to rebuild datasets.
 ## Rules for Claude
 
 - Use Jupyter MCP for notebook operations (read, edit, insert, execute)
-- **Never modify raw `/data/sav/` files** — write to separate path
+- **Notebook principal:** `eaui2026_analisis_bloques_ordenado.ipynb` en raíz
+- **Never modify raw `/data/sav/` files** — write to `/data/processed/` or similar
 - Execute cells to verify — don't assume correctness
 - Large outputs consume tokens — prefer `.head()`, `.shape`
 - Notebooks must be reproducible: "Restart & Run All" always works
 - Expansion factors matter: always use `fe_personas` or `fe_hogar` in weighted calcs
+- **Archivo:** versiones viejas, outputs descartados, y temporales están en `_archive/` (ver `_archive/README_ARCHIVO.md`)
 
 ## Documentation
 
-- **docs/** — reports, analysis plans, dashboards
-- **analysis/documentation/** — model guides, SHAP analysis, insights
+- **docs/** — reports, analysis plans, dashboards, diccionarios
+- **analysis/documentation/** — model guides, SHAP analysis, insights (versiones finales)
+- **ESTRUCTURA_PROYECTO.md** — mapa visual actual del proyecto
 - All indexed in Claude OS knowledge base
