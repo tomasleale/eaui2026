@@ -44,3 +44,22 @@ Rules:
 - Imports con alias @/ en vez de rutas relativas.
 - Tailwind con prefix "tw-", nunca sin prefix.
 - Tests en Vitest, no Jest.
+
+## Context Navigation (Graphify)
+
+### 3-Layer Query Rule
+1. **First:** query `graphify-out/graph.json` or `graphify-out/wiki/index.md`
+   to understand code structure and connections
+2. **Second:** query the Obsidian vault for decisions, progress, and project context
+3. **Third:** only read raw code files when editing
+   or when the first two layers don't have the answer
+
+### When to rebuild the graph
+- After structural changes (new modules, major refactors)
+- Headless: `graphify update .` (only processes modified files)
+- Skill: `/graphify . --update` (same behavior, runs through the skill — also accepts `--obsidian` to refresh the vault)
+- The graph is persistent — NO need to rebuild every session
+
+### Do NOT
+- Don't manually modify files inside `graphify-out/`
+- Don't re-read the entire codebase if the graph already has the information
