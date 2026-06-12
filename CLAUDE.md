@@ -109,3 +109,38 @@ eaui2026/
 
 ## Control de calidad
 - Si te pido modificar código, refactorizarlo o hacer modificaciones funcionales al código, asegurate siempre de que el código que insertes no arroje errores. No adivines el código a insertar. También siempre asegurate de que la ejecución secuencial de las celdas del notebook se mantenga intacta siempre.
+
+---
+
+## Knowledge Graph (Graphify)
+
+Codebase has a queryable knowledge graph at `graphify-out/graph.json` with community detection and cross-document relationships.
+
+**Available commands:**
+
+```bash
+# View interactive graph (open in browser after running)
+open graphify-out/graph.html
+
+# Update graph with new/changed files
+/graphify update
+
+# Query the graph (natural language questions)
+/graphify query "How does preprocessing connect to clustering?"
+/graphify query "What are the expansion factors used for?" --dfs
+
+# Find shortest path between concepts
+/graphify path "eaui2026.ipynb" "SHAP interpretability"
+
+# Explain a specific concept
+/graphify explain "ORDEN_CATEGORIAS"
+```
+
+**Graph structure (10 communities):**
+- Data Loading & Format: SPSS files, pandas, utilities
+- Analysis & Statistics: documentation, project overview
+- ML Models & Clustering: feature engineering, weights
+- Configuration & Setup: preprocessing pipeline
+- Skill Classification: nivel_habilidades, scikit-learn, SHAP
+
+**View report:** `graphify-out/GRAPH_REPORT.md` contains god nodes, surprising connections, and suggested exploration paths.
