@@ -68,9 +68,6 @@ eaui2026/
 │   ├── 2026.sav                     # SPSS survey data
 │   └── libro_codigos_EAUI2026.xlsx  # Variable codebook
 │
-├── utils/                           # Reusable Python modules
-│   └── orden_categorias.py          # ORDEN_CATEGORIAS dict & helper functions
-│
 ├── outputs/                         # Results (CSVs, plots, artifacts)
 │
 └── notebooks_backups/               # Historical backups of notebook runs
@@ -105,3 +102,10 @@ eaui2026/
 - Para búsquedas en >3 archivos, usar el subagente Explore (resultados resumidos).
 - Una oración si alcanza con una oración. Sin markdown innecesario.
 - Usar /compact antes de empezar una conversación nueva.
+
+## Renombrado de archivos
+- Si pido hacer un respaldo, inicia el nombre de archivo con la fecha en este formato: YYYY.MM.DD - 'filename'-backup.'extension'
+- Si te pido fechar un archivo, sigue el mismo formato de fecha
+
+## Control de calidad
+- Si te pido modificar código, refactorizarlo o hacer modificaciones funcionales al código, asegurate siempre de que el código que insertes no arroje errores. No adivines el código a insertar. También siempre asegurate de que la ejecución secuencial de las celdas del notebook se mantenga intacta siempre.
