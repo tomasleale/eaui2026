@@ -104,7 +104,7 @@ eaui2026/
 - Usar /compact antes de empezar una conversación nueva.
 
 ## Renombrado de archivos
-- Si pido hacer un respaldo, inicia el nombre de archivo con la fecha en este formato: YYYY.MM.DD - 'filename'-backup.'extension'
+- Si pido hacer un respaldo, inicia el nombre de archivo con la fecha en este formato: YYYY.MM.DD - 'filename' - backup.'extension'
 - Si te pido fechar un archivo, sigue el mismo formato de fecha
 
 ## Control de calidad
