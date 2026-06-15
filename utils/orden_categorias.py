@@ -17,106 +17,138 @@ ORDEN_CATEGORIAS = {
 
     # Demografía
     "sexo": ["Hombre", "Mujer"],
-    "tramo_edad": [
-        "15-24", "25-34", "35-44", "45-54", "55-64", "65+"
-    ],
+    "tramo_edad": ["Menor de 18", "18-29", "30-44", "45-59", "60 y más"],
+    "zona": ["Urbana", "Rural"],
 
     # Socioeconómico
     "gse": ["AB", "C1", "C2", "C3", "D", "E"],
-    "zona": ["Urbana", "Rural"],
+    "ingreso_tramo": [
+        "Hasta $384 mil",
+        "$384 mil a $540 mil",
+        "$540 mil a $798 mil",
+        "$798 mil a $1,1 millón",
+        "$1,1 millón a $1,7 millones",
+        "Más de $1,7 millones"
+    ],
+    "ingreso_grupo": ["Bajo", "Medio", "Alto"],
 
     # Educación
     "educ_jh": [
         "Sin educación formal",
-        "Educación básica",
-        "Educación media",
-        "Educación técnica",
-        "Educación universitaria"
+        "Básica incompleta",
+        "Básica completa",
+        "Media CH incompleta",
+        "Media TP incompleta",
+        "Media CH completa",
+        "Media TP completa",
+        "Superior técnica incompleta",
+        "Superior técnica completa",
+        "Superior universitaria incompleta",
+        "Superior universitaria completa"
     ],
+    "educ_grupo": ["Básica o menos", "Media", "Superior"],
 
     # Ocupación
     "ocupacion_jh": [
-        "Gerenciales y profesionales",
-        "Técnicos y asociados",
-        "Trabajadores de apoyo administrativo",
-        "Trabajadores de servicios",
-        "Trabajadores agrícolas",
-        "Oficiales y operarios",
-        "Operadores de máquinas",
-        "Trabajadores no cualificados",
-        "Fuerzas armadas",
-        "Inactivos/Pensionados"
+        "Trabajos ocasionales e informales",
+        "Oficio menor - obrero no calificado",
+        "Obrero calificado - microempresario",
+        "Empleado medio - técnico - prof. independiente",
+        "Ejecutivo medio - prof. universitario",
+        "Alto ejecutivo - empresario - directivo"
     ],
-
-    # Ingresos
-    "ingreso_tramo": [
-        "$0 - $129.000",
-        "$130.000 - $234.000",
-        "$235.000 - $416.000",
-        "$417.000 - $703.000",
-        "$704.000 - $1.173.000",
-        "$1.174.000 - $1.966.000",
-        "$1.967.000 - $2.950.000",
-        "$2.951.000+"
+    "ocupacion_encuestado": [
+        "Trabajos ocasionales e informales",
+        "Oficio menor - obrero no calificado",
+        "Obrero calificado - microempresario",
+        "Empleado medio - técnico - prof. independiente",
+        "Ejecutivo medio - prof. universitario",
+        "Alto ejecutivo - empresario - directivo",
+        "Sin trabajo remunerado"
     ],
-
-    "ingreso_grupo": [
-        "Bajo",
-        "Medio-Bajo",
-        "Medio",
-        "Medio-Alto",
-        "Alto"
+    "actividad": [
+        "Trabajador independiente",
+        "Empleador/patrón",
+        "Empleado dependiente",
+        "Familiar no remunerado",
+        "FFAA y de orden",
+        "Cesante",
+        "Jubilado/pensionado",
+        "Estudiante",
+        "Labores del hogar"
     ],
 
     # Acceso a Internet
     "acceso_internet_hogar": ["Sí", "No"],
     "tipo_acceso_fijo": [
-        "ADSL/Modem telefónico",
-        "Cable",
+        "ADSL",
+        "Cable/Módem",
         "Fibra óptica",
-        "Tecnología inalámbrica (4G/5G/WiFi)"
+        "Inalámbrica",
+        "Satelital",
+        "WiFi",
+        "Antena",
+        "Banda ancha",
+        "Acceso telefónico",
+        "No sabe"
     ],
-
+    "velocidad_contratada": [
+        "Hasta 10 Mbps",
+        "Más de 10 a 100 Mbps",
+        "Más de 100 a 500 Mbps",
+        "Más de 500 Mbps a 1 Gbps",
+        "Más de 1 Gbps",
+        "NS/NR"
+    ],
     "tipo_plan": [
-        "Plan de datos limitado",
-        "Plan de datos ilimitado",
-        "Plan combinado voz+datos"
+        "Banda ancha desnuda",
+        "BA + TV Cable",
+        "BA + Telefonía fija",
+        "Triple pack (BA+TV+Tel)",
+        "Otros planes"
     ],
-
     "tipo_acceso_mas_usado": [
-        "ADSL/Modem telefónico",
-        "Cable",
-        "Fibra óptica",
-        "Tecnología inalámbrica (4G/5G)",
-        "Smartphone/plan de datos móvil",
-        "WiFi público"
+        "Banda Ancha Fija / WiFi",
+        "Banda Ancha Móvil",
+        "Internet Móvil (Smartphone/Tablet)",
+        "Conexión Satelital"
     ],
 
     # Frecuencias y usos
     "frecuencia_internet": [
-        "No usa",
-        "Usa menos de una vez por semana",
-        "Usa 1-2 veces por semana",
-        "Usa varios días a la semana",
-        "Usa todos los días"
+        "Todos los días",
+        "Varias veces por semana",
+        "Al menos una vez al mes",
+        "Menos de una vez al mes"
     ],
-
-    "tiempo_diario": [
-        "No usa",
+    "tiempo_diario_internet": [
         "Menos de 1 hora",
-        "1-3 horas",
-        "4-7 horas",
-        "Más de 8 horas"
+        "Entre 1 y 2 horas",
+        "Entre 2 y 4 horas",
+        "Más de 4 horas"
+    ],
+    "ultimo_uso_internet": [
+        "Hoy",
+        "Entre 2 y 3 días",
+        "Entre 3 y 7 días",
+        "Entre 1 y 4 semanas",
+        "Más de 4 semanas",
+        "Más de 12 meses",
+        "Nunca"
     ],
 
-    # Tipos de dispositivos
-    "tiene_smartphone": ["No", "Sí"],
-    "tiene_computador": ["No", "Sí"],
-    "tiene_tablet": ["No", "Sí"],
-
-    # Actividades
-    "uso_computador": ["No usa", "Usa"],
-    "uso_smartphone": ["No usa", "Usa"],
+    # Percepciones y otros
+    "percepcion_proteccion": [
+        "Muy protegido",
+        "Protegido",
+        "Desprotegido",
+        "Muy desprotegido",
+        "NS/NR"
+    ],
+    "internet_mejora_vida": ["Sí", "No"],
+    "internet_facilita_trabajo": ["Sí", "No"],
+    "uso_computador": ["Sí", "No"],
+    "uso_smartphone": ["Sí", "No"]
 }
 
 
