@@ -20,16 +20,48 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Running & Development
 
-### Open the Notebook
+### Python Version
+Uses Python 3.14.6 (see `.python-version`). Minimum supported: 3.9.
+
+### Environment Setup
+
+**Using uv (preferred):**
 ```bash
+uv sync
+uv run jupyter notebook eaui2026.ipynb
+```
+
+**Using pip:**
+```bash
+pip install -e .
 jupyter notebook eaui2026.ipynb
 ```
 
-### Python Environment
-Install dependencies as needed:
+**Manual dependency install (if needed):**
 ```bash
-pip install pyreadstat prince scikit-learn kmodes shap pandas matplotlib seaborn scipy
+pip install pyreadstat prince scikit-learn kmodes shap pandas matplotlib seaborn scipy ipykernel jupyter
 ```
+
+### Open Notebooks
+- **Main analysis:** `eaui2026.ipynb` (primary source of truth)
+- **Skills analysis:** `eaui_habilidades.ipynb` (supplementary skills-focused analysis)
+
+### Utility Modules
+
+**`utils/orden_categorias.py`**
+- Dictionary of category orderings for consistent plotting/table output
+- Use before any visualization to prevent alphabetical sorting
+- Import: `from utils.orden_categorias import ORDEN_CATEGORIAS`
+- Covers: `nivel_habilidades`, `sexo`, `tramo_edad`, `gse`, `zona`, `educ_jh`, `ocupacion_jh`, `ingreso_*`, `acceso_internet_hogar`, `tipo_acceso_*`, `tipo_plan`
+
+**`dstats_ajustada.py`**
+- Helper for weighted statistical analysis (univariate/bivariate, cross-tabs)
+- Used in notebook for quick exploratory stats with expansion factors
+- Function: `dstats(df, "variable", tipo="frecuencia", factor="fe_personas")`
+
+**`gse_ajustado.py`**
+- GSE (Socioeconomic Group) calculation utilities
+- Used in preprocessing step (derives GSE from education A10 + occupation A11)
 
 ### Common Operations
 - **Reload data:** `pyreadstat.read_sav("data/2026.sav")`
@@ -41,17 +73,28 @@ pip install pyreadstat prince scikit-learn kmodes shap pandas matplotlib seaborn
 
 ## Notebook Structure
 
-Sections in order (run top-to-bottom):
-1. Libraries & configuration
-2. Data loading from SPSS
-3. Preprocessing: GSE, missing values (99 → NaN), variable renaming, skill recoding (Q8), income estimation
-4. Weighted descriptive stats (univariate & bivariate)
-5. Statistical inference (chi-square, Cramér's V)
-6. Advanced models:
-   - MCA + K-Means clustering (digital skills profiles)
-   - Exploratory factor analysis
-   - Classification models (LogReg/RF/GBM) → skill level prediction
-   - SHAP feature importance plots
+### eaui2026.ipynb (Main Analysis Notebook)
+**CRITICAL:** Run cells top-to-bottom sequentially. Downstream cells depend on preprocessed DataFrames from prior cells.
+
+Sections in order:
+1. **Libraries & configuration** — imports all dependencies
+2. **Data loading from SPSS** — `pyreadstat.read_sav("data/2026.sav")` → raw df
+3. **Preprocessing** (produces `df_clean`):
+   - GSE derivation (AIM-ESOMAR from education A10 + occupation A11)
+   - Missing values: `99` → `NaN` (amounts: `9999999` → `NaN`)
+   - Variable renaming (SPSS codes to human-readable names)
+   - Skill recoding (Q8_1 to Q8_18 → 0/"No", 1/"Sí")
+   - Income midpoint estimation
+4. **Weighted descriptive stats** — univariate & bivariate with `fe_personas`/`fe_hogar`
+5. **Statistical inference** — chi-square tests, Cramér's V
+6. **Advanced models** (each produces outputs/ artifacts):
+   - **MCA + K-Means clustering:** Digital skills profiles by demographic/socioeconomic group
+   - **Exploratory Factor Analysis:** Latent skill dimensions
+   - **Classification models:** LogReg/Random Forest/GBM → `nivel_habilidades` prediction
+   - **SHAP interpretability:** Feature importance plots for model classes (e.g., "Avanzado", "Sin habilidades")
+
+### eaui_habilidades.ipynb (Skills Analysis)
+Supplementary notebook focused on skills-specific deep-dives (clustering, profiles, patterns).
 
 ---
 
@@ -60,17 +103,33 @@ Sections in order (run top-to-bottom):
 ```
 eaui2026/
 ├── eaui2026.ipynb                   # Main analysis notebook (single source of truth)
-├── README.md                        # Project layout & conventions
+├── eaui_habilidades.ipynb           # Skills-focused supplementary analysis
+├── CLAUDE.md                        # This file (Claude Code guidance)
 ├── AGENT_INSTRUCTIONS.md            # Architecture & data pipeline details
-├── CLAUDE.md                        # This file
+├── README.md                        # Project layout & conventions
+│
+├── pyproject.toml                   # Dependency declarations (uv/pip)
+├── uv.lock                          # Lockfile for reproducible environments
+├── Pipfile & Pipfile.lock          # Legacy pipenv configuration
+│
+├── utils/                           # Reusable Python utilities
+│   └── orden_categorias.py          # Category ordering dict for consistent visualizations
+│
+├── dstats_ajustada.py               # Weighted statistical analysis helper (for notebook use)
+├── gse_ajustado.py                  # GSE calculation utilities
+├── main.py                          # Placeholder script
 │
 ├── data/                            # Raw input (DO NOT modify directly)
-│   ├── 2026.sav                     # SPSS survey data
-│   └── libro_codigos_EAUI2026.xlsx  # Variable codebook
+│   ├── 2026.sav                     # SPSS survey (5,000 rows, 587 columns)
+│   ├── libro_codigos_EAUI2026.xlsx  # Variable codebook
+│   ├── libro_codigos_EAUI2026_habilidades_socio.xlsx  # Skills & socioeconomic codebook
+│   └── EAUI2026_habilidades_socio.csv  # Pre-processed skills data
 │
-├── outputs/                         # Results (CSVs, plots, artifacts)
+├── outputs/                         # Analysis results (plots, CSVs, model artifacts)
+│   ├── *.png                        # SHAP & clustering visualizations
+│   └── (model artifacts, if exported)
 │
-└── notebooks_backups/               # Historical backups of notebook runs
+└── notebooks_backups/               # Historical snapshots of notebook runs
 ```
 
 ---
@@ -107,8 +166,26 @@ eaui2026/
 - Si pido hacer un respaldo, inicia el nombre de archivo con la fecha en este formato: YYYY.MM.DD - 'filename' - backup.'extension'
 - Si te pido fechar un archivo, sigue el mismo formato de fecha
 
-## Control de calidad
-- Si te pido modificar código, refactorizarlo o hacer modificaciones funcionales al código, asegurate siempre de que el código que insertes no arroje errores. No adivines el código a insertar. También siempre asegurate de que la ejecución secuencial de las celdas del notebook se mantenga intacta siempre.
+## Working with Notebooks
+
+### Before Modifying Cells
+- Run the notebook top-to-bottom first to establish baseline state
+- Note which cells depend on prior outputs (especially `df`, `df_clean`, models)
+- When editing a cell, verify its input variables exist in prior cells
+- After editing: restart kernel and rerun from the modified cell onward to validate chain
+
+### Common Pitfalls
+- **Missing `fe_personas` in aggregations:** Weighted stats require expansion factor multiplication
+- **Alphabetical category ordering:** Always apply `ORDEN_CATEGORIAS` before plotting
+- **Missing value codes:** `99` and `9999999` must be converted to `NaN` during preprocessing
+- **Model reproducibility:** Set random seeds if regenerating models (K-Means, RF, GBM)
+
+## Control de Calidad
+- Cuando se pida modificar, refactorizar o hacer cambios funcionales al código: 
+  - Verificar siempre que el código insertado no arroje errores (nunca adivinar)
+  - Mantener intacta la ejecución secuencial de celdas del notebook
+  - Probar cambios ejecutando desde la celda modificada en adelante
+- No cambiar el orden de celdas sin justificación (rompe dependencias de datos)
 
 ---
 
