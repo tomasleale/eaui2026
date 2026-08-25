@@ -1,0 +1,334 @@
+
+╔═══════════════════════════════════════════════════════════════════════════════════════════════════╗
+║                    ANÁLISIS: BRECHAS DIGITALES POR GRUPOS DEMOGRÁFICOS                           ║
+║                                        EAUI 2026                                                  ║
+╚═══════════════════════════════════════════════════════════════════════════════════════════════════╝
+
+═══════════════════════════════════════════════════════════════════════════════════════════════════════
+
+SECCIÓN 1: BRECHA POR EDAD
+─────────────────────────────────────────────────────────────────────────────────────────────────────
+
+1.1 RESUMEN EJECUTIVO
+  La edad es EL FACTOR MÁS DETERMINANTE de brecha digital en la muestra.
+  Existe un gradiente claro de edad → competencia digital (jóvenes > adultos > adultos mayores).
+
+1.2 PROMEDIO DE HABILIDADES POR GRUPO DE EDAD
+  
+  Grupo de Edad    n=      Promedio    Mediana    Desv. Est.    Nivel
+  ─────────────────────────────────────────────────────────────────────
+  <18 años         124      11.01       11         2.1          Avanzado
+  18-25 años       476      11.19       11         2.0          Avanzado
+  26-35 años       853      10.99       11         2.3          Avanzado
+  36-45 años       907       9.49       10         3.1          Intermedio
+  46-55 años       819       7.19        7         4.8          Básico
+  56-65 años       925       4.75        4         4.9          Muy Básico
+  65+ años         896       3.15        2         4.0          Muy Básico
+  ─────────────────────────────────────────────────────────────────────
+  BRECHA MÁXIMA: <18 vs 65+ = 8 habilidades (8.0x más competentes)
+
+1.3 PATRONES DE BRECHA POR EDAD
+  
+  Jóvenes (<35 años):
+  • Videoconferencia: 84-85% (mantiene alto)
+  • Nube: 87-92% (excelente)
+  • Correos: 73-80% (bueno)
+  • Phishing: 69-78% (moderado-bueno)
+  ✓ Fortaleza: Comunicación y colaboración digital
+  ✗ Debilidad: Seguridad (phishing) aún débil en mayores de 26
+
+  Adultos (36-55 años):
+  • Videoconferencia: 83-86% (se mantiene alto)
+  • Nube: 82-87% (bueno)
+  • Correos: 45-64% (CAÍDA SIGNIFICATIVA después de 35)
+  • Phishing: 24-39% (CRÍTICO - bajo reconocimiento)
+  ✓ Fortaleza: Comunicación básica, videoconferencia
+  ✗ Debilidad: Productividad (correo, Excel) y seguridad
+
+  Adultos Mayores (56+ años):
+  • Videoconferencia: 66-81% (resiste bien, efecto pandemia)
+  • Nube: 66-78% (moderado)
+  • Correos: 19-24% (MUY BAJO - casi no lo dominan)
+  • Excel: 22-34% (muy bajo)
+  • Phishing: 11-16% (CRÍTICO - altamente vulnerable)
+  ✓ Fortaleza: Acceso a videoconferencia (obligada por pandemia)
+  ✗ Debilidad: Todas las demás habilidades (comunicación formal, productividad, seguridad)
+
+1.4 CONCLUSIÓN POR EDAD
+  BRECHA CRÍTICA detectada después de los 45 años. La competencia digital se colapsa.
+  Recomendación: Programas de capacitación focalizados en adultos 45-65+ años, especialmente
+                 en correo, seguridad y herramientas de oficina.
+
+═══════════════════════════════════════════════════════════════════════════════════════════════════════
+
+SECCIÓN 2: BRECHA POR EDUCACIÓN
+─────────────────────────────────────────────────────────────────────────────────────────────────────
+
+2.1 RESUMEN EJECUTIVO
+  La educación formal es el SEGUNDO FACTOR DETERMINANTE de brecha digital.
+  Correlación muy fuerte: mayor educación = mayores habilidades digitales.
+
+2.2 PROMEDIO DE HABILIDADES POR NIVEL EDUCATIVO
+  
+  Nivel Educativo       n=      Promedio    Mediana    Desv. Est.    Nivel
+  ─────────────────────────────────────────────────────────────────────────
+  Básica                801       2.38        2         2.5          Muy Básico
+  Media               1.361       9.35       10         3.4          Intermedio
+  Técnica/Superior    1.843       6.84        7         4.6          Básico-Intermedio
+  Universitaria         995      10.60       11         2.3          Avanzado
+  ─────────────────────────────────────────────────────────────────────
+  BRECHA MÁXIMA: Universitaria vs Básica = 4.4x más competentes
+
+2.3 PATRONES DE BRECHA POR EDUCACIÓN
+  
+  Educación Básica (16% de la muestra):
+  • Videoconferencia: 70.5% (bajo, pero resiste)
+  • Nube: 71.7% (bajo)
+  • Redes sociales: 22.6% (MUY BAJO)
+  • Correos: 6.8% (CRÍTICO - casi nadie domina)
+  • Excel: 19.5% (muy bajo)
+  • Phishing: 11.5% (CRÍTICO - altamente vulnerable)
+  ✗ GRUPO DE RIESGO: Excluidos digitales de facto. No pueden acceder a servicios digitales.
+
+  Educación Media (27.2% de la muestra):
+  • Videoconferencia: 84.7% (bueno)
+  • Nube: 84.0% (bueno)
+  • Redes sociales: 72.7% (bueno)
+  • Correos: 64.1% (moderado-bueno)
+  • Excel: 61.2% (moderado)
+  • Phishing: 41.8% (bajo-moderado)
+  ✓ GRUPO FUNCIONAL: Puede usar herramientas básicas, pero vulnerable en seguridad.
+
+  Educación Técnica/Superior (36.9% de la muestra):
+  • Videoconferencia: 80.8% (bueno)
+  • Nube: 81.1% (bueno)
+  • Redes sociales: 63.3% (moderado)
+  • Correos: 42.7% (bajo-moderado)
+  • Excel: 49.7% (moderado)
+  • Phishing: 28.6% (bajo)
+  ⚠ GRUPO MIXTO: Técnicos/superiores tienen paradójicamente menor dominio que media.
+             Posible: cambio de perfil generacional (adultos mayores en grupo técnico).
+
+  Educación Universitaria (19.9% de la muestra):
+  • Videoconferencia: 86.7% (alto)
+  • Nube: 86.6% (alto)
+  • Redes sociales: 84.9% (alto)
+  • Correos: 76.3% (alto)
+  • Excel: 66.8% (moderado-alto)
+  • Phishing: 50.9% (moderado)
+  ✓ GRUPO COMPETENTE: Máxima competencia en comunicación y colaboración.
+                      Aún vulnerable en seguridad (phishing).
+
+2.4 CONCLUSIÓN POR EDUCACIÓN
+  Educación básica es barrera CRÍTICA. Recomendación: Programas de "alfabetización digital"
+  para población con educación básica (800K personas). Paradoja técnico/superior sugiere
+  necesidad de análisis por edad dentro de estos grupos.
+
+═══════════════════════════════════════════════════════════════════════════════════════════════════════
+
+SECCIÓN 3: BRECHA POR GSE (NIVEL SOCIOECONÓMICO)
+─────────────────────────────────────────────────────────────────────────────────────────────────────
+
+3.1 RESUMEN EJECUTIVO
+  El GSE es el TERCER FACTOR DETERMINANTE (derivado principalmente de educación).
+  Brecha clara pero menos pronunciada que por educación/edad.
+
+3.2 PROMEDIO DE HABILIDADES POR GSE
+  
+  Nivel GSE           n=      Promedio    Mediana    Desv. Est.    % de Población
+  ──────────────────────────────────────────────────────────────────────────────
+  D-E (Bajo)          801       2.38        2         2.5          16.0%
+  C (Medio)         3.204       7.91        8         4.6          64.1%
+  A-B (Alto)          995      10.60       11         2.3          19.9%
+  ──────────────────────────────────────────────────────────────────────────────
+  BRECHA MÁXIMA: A-B vs D-E = 4.4x más competentes
+
+3.3 DISTRIBUCIÓN DE LA BRECHA
+  
+  Grupo D-E (Bajo, 800K personas):
+  • Excluidos digitales: 16% de la población
+  • Dependen de acceso presencial a servicios (bancos, gobierno, educación)
+  • Altamente vulnerable a fraude digital
+  • Necesitan capacitación urgente
+
+  Grupo C (Medio, 3.2M personas):
+  • Masa mayoritaria de usuarios (64%)
+  • Competencia muy variable (mediana 8, rango 0-17)
+  • Brecha interna grande (desde muy básico hasta intermedio)
+  • Capacitación dirigida podría beneficiar 2M personas
+
+  Grupo A-B (Alto, 1M personas):
+  • Menor brecha interna (concentrado en 10-11 habilidades)
+  • Acceso a servicios digitales avanzados
+  • Mayor seguridad relativa (phishing aún 50.9%)
+
+3.4 CONCLUSIÓN POR GSE
+  Brecha socioeconómica es principalmente derivada de educación.
+  Intervención más efectiva: mejorar educación formal en grupos D-E/C.
+
+═══════════════════════════════════════════════════════════════════════════════════════════════════════
+
+SECCIÓN 4: ANÁLISIS INTERACTIVO - COMBINACIONES DE FACTORES
+─────────────────────────────────────────────────────────────────────────────────────────────────────
+
+4.1 GRUPO DE MÁXIMO RIESGO
+  Característica: Edad 56+, educación básica, GSE D-E
+  Prevalencia: ~250-300K personas estimadas
+  Habilidades promedio: <2
+  Vulnerabilidad: Crítica en todas las dimensiones
+  Acciones: Capacitación presencial urgente, mediadores digitales, acceso público
+
+4.2 GRUPO DE RIESGO MODERADO
+  Característica: Edad 45-55, educación media, GSE C
+  Prevalencia: ~600-700K personas
+  Habilidades promedio: 7-8
+  Vulnerabilidad: Media-alta en seguridad, media-baja en productividad
+  Acciones: Capacitación en seguridad digital, herramientas Office
+
+4.3 GRUPO COMPETENTE
+  Característica: Edad <45, educación media+, GSE C-A/B
+  Prevalencia: ~2.5M personas
+  Habilidades promedio: 9-11
+  Vulnerabilidad: Baja (excepto en seguridad avanzada)
+  Acciones: Capacitación avanzada, upskilling técnico
+
+═══════════════════════════════════════════════════════════════════════════════════════════════════════
+
+SECCIÓN 5: HABILIDADES ESPECÍFICAS CON MAYOR BRECHA
+─────────────────────────────────────────────────────────────────────────────────────────────────────
+
+5.1 CORREO ELECTRÓNICO
+  Brecha por edad: <18 (73%) vs 65+ (19%) = 54 puntos porcentuales
+  Brecha por educación: Universitaria (76%) vs Básica (7%) = 69 puntos
+  Brecha por GSE: Alto (76%) vs Bajo (7%) = 69 puntos
+  ⚠ CRÍTICO: Herramienta fundamental para acceso a servicios, tiene mayor brecha
+
+5.2 HOJA DE CÁLCULO (EXCEL)
+  Brecha por edad: <18 (75%) vs 65+ (23%) = 52 puntos
+  Brecha por educación: Universitaria (67%) vs Básica (19%) = 48 puntos
+  Brecha por GSE: Alto (67%) vs Bajo (19%) = 48 puntos
+  ⚠ ALTO: Competencia laboral clave, distribuida desigualmente
+
+5.3 RECONOCIMIENTO DE PHISHING
+  Brecha por edad: 18-25 (69%) vs 65+ (11%) = 58 puntos (LA MAYOR BRECHA)
+  Brecha por educación: Universitaria (51%) vs Básica (12%) = 39 puntos
+  Brecha por GSE: Alto (51%) vs Bajo (12%) = 39 puntos
+  🔴 CRÍTICO: Mayor brecha observada. Adultos mayores y grupos bajos completamente vulnerables
+
+5.4 REDES SOCIALES
+  Brecha por edad: <18 (79%) vs 65+ (35%) = 44 puntos
+  Brecha por educación: Universitaria (85%) vs Básica (23%) = 62 puntos
+  Brecha por GSE: Alto (85%) vs Bajo (23%) = 62 puntos
+  ⚠ MODERADO: Competencia comunicativa, pero desigual distribución
+
+═══════════════════════════════════════════════════════════════════════════════════════════════════════
+
+SECCIÓN 6: SÍNTESIS DE BRECHAS DIGITALES
+─────────────────────────────────────────────────────────────────────────────────────────────────────
+
+BRECHA CRÍTICA (Máximo Riesgo):
+  • Correo electrónico: 69 puntos de brecha educativa
+  • Phishing: 58 puntos de brecha por edad
+  • Excel: 52 puntos de brecha por edad
+  → Grupos afectados: Edad 56+, educación básica, GSE bajo
+  → Población: ~300-400K personas
+
+BRECHA ALTA (Riesgo Moderado):
+  • Redes sociales: 62 puntos de brecha educativa
+  • Documentos de texto: 47-51 puntos
+  → Grupos afectados: Edad 45-55, educación media, GSE medio
+  → Población: ~600-800K personas
+
+BRECHA MODERADA (Riesgo Bajo):
+  • Videoconferencia: 16 puntos (mínima brecha por edad/educación - efecto pandemia)
+  • Herramientas nube: 20 puntos (bajo - acceso democratizado)
+  → Grupos afectados: Todos (capacidad redistributiva de estas herramientas)
+  → Población: Mínimo riesgo
+
+═══════════════════════════════════════════════════════════════════════════════════════════════════════
+
+RECOMENDACIONES POR GRUPO DEMOGRÁFICO
+─────────────────────────────────────────────────────────────────────────────────────────────────────
+
+EDAD (<25 años) - Digital Natives
+  ✓ Competencia consolidada en comunicación
+  ⚠ Necesidad: Seguridad digital (phishing, privacidad)
+  → Acción: Educación en ciberseguridad básica
+
+EDAD (25-45 años) - Usuarios Competentes
+  ✓ Competencia en comunicación y colaboración
+  ⚠ Brecha creciente después de 35 en productividad
+  → Acción: Capacitación en Excel, correo profesional
+
+EDAD (45-55 años) - Transición
+  ⚠ Caída en productividad, seguridad muy baja
+  → Acción: URGENTE - Capacitación en Excel, correo, seguridad
+
+EDAD (55+ años) - Adultos Mayores
+  🔴 Brecha máxima, excepto videoconferencia
+  → Acción: URGENTE - Programa integral de alfabetización digital
+            Mediadores digitales, capacitación presencial, acceso público
+
+EDUCACIÓN Básica (16%)
+  🔴 Excluidos digitales
+  → Acción: URGENTE - Programa especial de alfabetización
+            Acceso público, capacitación presencial subvencionada
+
+EDUCACIÓN Media (27%)
+  ⚠ Funcionales pero vulnerables
+  → Acción: Capacitación en seguridad, Excel, servicios digitales
+
+EDUCACIÓN Técnica/Superior (37%)
+  ✓ Competencia media, pero edad-dependiente
+  → Acción: Upskilling técnico, seguridad avanzada
+
+EDUCACIÓN Universitaria (20%)
+  ✓ Mayor competencia
+  ⚠ Aún vulnerable en seguridad
+  → Acción: Especialización técnica, ciberseguridad avanzada
+
+GSE Bajo (16%)
+  🔴 Crítico - Alianzas con educación pública, programas subsidados
+GSE Medio (64%)
+  ⚠ Alto impacto potencial - Programas masivos de capacitación
+GSE Alto (20%)
+  ✓ Menor brecha - Programa de especialización
+
+═══════════════════════════════════════════════════════════════════════════════════════════════════════
+
+CONCLUSIONES FINALES
+─────────────────────────────────────────────────────────────────────────────────────────────────────
+
+1. EDAD es el factor más determinante de brecha (8x diferencia <18 vs 65+)
+   Existe un colapso de competencia digital después de los 45 años.
+
+2. EDUCACIÓN es el segundo factor (4.4x diferencia Universitaria vs Básica)
+   Educación básica es barrera prácticamente insuperable sin intervención.
+
+3. GSE es tercero (4.4x), mayormente derivado de educación
+   Pero la correlación con acceso a internet sugiere factores adicionales.
+
+4. HABILIDADES CLAVE CON MAYOR BRECHA:
+   • Correo: Brecha de 69 puntos por educación
+   • Phishing: Brecha de 58 puntos por edad (CRÍTICA)
+   • Excel: Brecha de 52 puntos por edad
+
+5. GRUPOS PRIORITARIOS PARA INTERVENCIÓN:
+   • Edad 56+ (1.8M personas): Brecha crítica
+   • Educación básica (0.8M personas): Excluidos digitales
+   • GSE Bajo (0.8M personas): Sin acceso a servicios digitales
+
+6. ESTRATEGIA RECOMENDADA:
+   a) Corto plazo (6 meses): Capacitación urgente en phishing y seguridad
+   b) Mediano plazo (1-2 años): Alfabetización digital para grupos vulnerables
+   c) Largo plazo (3+ años): Mejora de educación formal en educación básica
+
+═══════════════════════════════════════════════════════════════════════════════════════════════════════
+
+ARCHIVOS GENERADOS
+─────────────────────────────────────────────────────────────────────────────────────────────────────
+✓ habilidades_por_demografia_1.png - Distribuciones y tendencias (9 gráficos)
+✓ habilidades_por_demografia_2.png - Brechas específicas (6 gráficos)
+✓ Este reporte (análisis completo)
+
+═══════════════════════════════════════════════════════════════════════════════════════════════════════

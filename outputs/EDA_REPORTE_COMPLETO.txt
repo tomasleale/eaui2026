@@ -1,0 +1,329 @@
+
+╔═══════════════════════════════════════════════════════════════════════════════════════════════════╗
+║                        REPORTE EDA: VARIABLES Q - HABILIDADES DIGITALES                          ║
+║                                        EAUI 2026                                                  ║
+╚═══════════════════════════════════════════════════════════════════════════════════════════════════╝
+
+RESUMEN EJECUTIVO
+─────────────────────────────────────────────────────────────────────────────────────────────────────
+Período: Encuesta 2026
+Muestra: 5,000 respondentes
+Variables analizadas: 127 variables Q (preguntas) sobre uso de internet y habilidades digitales
+Datos válidos: 4,731 respondentes con información de acceso a internet
+Enfoque: Actividades en internet, habilidades digitales, aprendizaje de herramientas
+
+═══════════════════════════════════════════════════════════════════════════════════════════════════════
+
+TEMÁTICA 1: ACCESO Y CONECTIVIDAD A INTERNET
+─────────────────────────────────────────────────────────────────────────────────────────────────────
+
+1.1 FRECUENCIA DE USO
+  • 88.8% (4,199) accede casi todos los días a internet
+  • 8.8% (442) utiliza varias veces por semana
+  • 1.8% (90) usa una vez a la semana o menos
+
+  Implicación: Población altamente conectada y dependiente de internet en actividades cotidianas.
+  Brecha: 11.2% de usuarios no tiene acceso diario, potencial mercado de inclusión digital.
+
+1.2 TIEMPO DIARIO CONECTADO
+  • 49.6% (2,082) dedica más de 5 horas diarias a internet
+  • 17.4% (872) dedica entre 3-5 horas
+  • 15.4% (772) dedica entre 1-2 horas
+  • 9.5% (473) dedica menos de 1 hora
+  • 16% datos faltantes (usuarios que no acceden o no respondieron)
+
+  Implicación: Dependencia significativa de internet. Usuarios de alto tiempo están asociados con
+             mayor número de habilidades digitales (correlación de 0.34 con email, 0.31 con redes).
+  Tendencia: A mayor frecuencia de uso, mayor tiempo conectado (relación positiva clara).
+
+1.3 TIPOS DE CONEXIÓN DISPONIBLES
+  • Internet Móvil con Plan: 84.9% (4,016)
+  • Banda Ancha Fija/WiFi: 58.2% (2,753)
+  • Banda Ancha Móvil: 5.2% (247)
+  • Conexión Satelital: 1.6% (75)
+
+  Implicación: Dependencia en conectividad móvil. Acceso dual (móvil + fijo) disponible para 44%
+             de usuarios que tienen ambos tipos.
+  Brecha: 15.1% sin acceso a internet móvil formal; 41.8% sin banda ancha fija.
+
+1.4 LUGARES DE ACCESO
+  • En el hogar: 95.2% (4,506)
+  • En lugar de trabajo: 22.1% (1,046)
+  • Otro lugar: 9.6% (456)
+  • En hogar de otra persona: 7.3% (343)
+  • En educación/capacitación: 4.8% (227)
+  • Lugares públicos gratuitos: 2.2% (106)
+  • Centro de internet pagado: 1.4% (66)
+
+  Implicación: El hogar es prácticamente el único lugar de acceso para la mayoría. Bajo acceso
+             a espacios públicos de internet (2.2%).
+  Oportunidad: Acceso complementario en lugares de trabajo (22%) sugiere posibilidad de
+              expansión en centros públicos y educacionales.
+
+═══════════════════════════════════════════════════════════════════════════════════════════════════════
+
+TEMÁTICA 2: HABILIDADES DIGITALES ESPECÍFICAS
+─────────────────────────────────────────────────────────────────────────────────────────────────────
+
+2.1 HABILIDADES MÁS DESARROLLADAS (>60% DE DOMINIO)
+  
+  Comunicación y Colaboración:
+  • Videoconferencia (Zoom, Teams, Meet): 81.7%
+  • Herramientas colaborativas en la nube: 81.8%
+  • Redes sociales: 64.9%
+  • WhatsApp/Telegram: 64.6%
+
+  Implicación: Pandemia aceleró adopción de videoconferencia. Redes sociales y mensajería son
+             naturales en población joven/adulta.
+  Fortaleza: Comunicación remota es competencia instalada en población urbana encuestada.
+
+2.2 HABILIDADES MODERADAMENTE DESARROLLADAS (40-60%)
+  
+  Productividad Básica:
+  • Hojas de cálculo (Excel): 52.3%
+  • Correos electrónicos: 50.7%
+  • Documentos de texto: 49.4%
+  • Navegador web: 42.7%
+
+  Implicación: Aproximadamente la mitad de usuarios domina herramientas básicas de oficina.
+  Brecha: 47.7% no domina Excel; 50.6% no domina correo efectivamente.
+  Oportunidad: Potencial mercado para capacitación en Office/Google Workspace.
+
+2.3 HABILIDADES TÉCNICAS DEFICITARIAS (<35% DE DOMINIO)
+  
+  • Buscar información segura/confiable: 28.9%
+  • Otras habilidades: 30.2%
+  • Reconocer phishing: 34.6%
+  • Crear contenido multimedia: 11.7%
+  • Instalación de SO/Programación: 16.6%
+
+  Implicación: BRECHA CRÍTICA en seguridad digital. Solo 1 de 3 usuarios reconoce phishing.
+  Riesgo: Población vulnerable a fraudes, estafas en línea y robo de identidad.
+  Deficiencia: Muy pocas habilidades técnicas avanzadas (programación, multimedia).
+
+2.4 CORRELACIONES ENTRE HABILIDADES
+  • Correo + Excel: 0.41 (usuarios de oficina)
+  • Redes Sociales + Videoconferencia: 0.55 (usuarios comunicación)
+  • Correo + Información confiable: 0.32 (usuarios pensamiento crítico)
+
+  Implicación: Habilidades tienden a agruparse. No hay transferencia automática entre grupos
+             (técnicas vs. comunicación). Necesidad de capacitación especializada por cluster.
+
+═══════════════════════════════════════════════════════════════════════════════════════════════════════
+
+TEMÁTICA 3: ACTIVIDADES EN INTERNET
+─────────────────────────────────────────────────────────────────────────────────────────────────────
+
+3.1 ACTIVIDADES PRINCIPALES (>60% DE USO)
+  
+  • Comunicaciones: 95.3%
+  • Videollamadas: 84.4%
+  • Obtener información: 68.1%
+  • Correos: 64.3%
+
+  Implicación: Internet es principalmente medio de comunicación para la población. Información
+             general es segunda actividad prioritaria.
+  Comportamiento: Consumo pasivo de información > producción de contenido.
+
+3.2 ACTIVIDADES MODERADAS (25-50% DE USO)
+  
+  • Educación/aprendizaje: 40.1%
+  • Streaming video/música: 37.2%
+  • Trabajo: 35.6%
+  • Redes sociales (como actividad): 29.8%
+  • Servicios financieros: 28.5%
+  • Noticias: 23.7%
+  • Compras online: 23.4%
+
+  Implicación: Tercera parte de usuarios accede a educación. Brecha en adopción de servicios
+             digitales (compras, finanzas).
+  Oportunidad: Potencial para e-learning y fintech, pero requiere confianza y seguridad.
+
+3.2 ACTIVIDADES BAJAS (<25% DE USO)
+  
+  • Entretenimiento: 18.3%
+  • Compras: 23.4%
+  • Noticias: 23.7%
+
+  Implicación: Baja penetración de e-commerce y servicios especializados. Cultura de desconfianza
+             en transacciones en línea.
+  Brecha: 76.6% de usuarios no realiza compras en línea.
+
+═══════════════════════════════════════════════════════════════════════════════════════════════════════
+
+TEMÁTICA 4: APRENDIZAJE DE HERRAMIENTAS DIGITALES
+─────────────────────────────────────────────────────────────────────────────────────────────────────
+
+4.1 MÉTODOS DE APRENDIZAJE UTILIZADOS
+
+  En la escuela/colegio/universidad: 46.7% (respuesta múltiple; n=3,720 respondentes educacionales)
+  Capacitación formal (cursos pagados): 28.5%
+  Plataformas de aprendizaje en línea: 25.6%
+  Familiar/amigo/contacto: 15.4%
+  Tutoriales en línea: 6.6%
+  Prueba y error: 5.6%
+  Otros: 0.1%
+
+  Implicación: EDUCACIÓN FORMAL es principal fuente (escuela). Solo 25.6% accede a e-learning.
+  Brecha: Bajo acceso a tutoriales en línea (6.6%) y autoaprendizaje (5.6%).
+  Oportunidad: Demanda insatisfecha de capacitación flexible (online, pagada).
+
+4.2 PERFILES DE APRENDIZAJE
+  • Formales (escuela + cursos + plataformas): ~60% tienen acceso a educación estructurada
+  • Informales (familia, tutoriales, prueba/error): ~27% confía en aprendizaje social/experiencial
+  • Mixto: Probable que muchos combinen métodos
+
+  Implicación: Población educada pero con brechas en acceso a capacitación actual (soft skills,
+             herramientas nuevas).
+
+═══════════════════════════════════════════════════════════════════════════════════════════════════════
+
+TEMÁTICA 5: PATRONES Y CLUSTERING DE HABILIDADES
+─────────────────────────────────────────────────────────────────────────────────────────────────────
+
+5.1 DISTRIBUCIÓN DE USUARIOS POR NIVEL DE HABILIDAD DIGITAL
+  
+  Nivel de Dominio          Usuarios      Porcentaje     Observación
+  ─────────────────────────────────────────────────────────────────
+  Avanzado (11+ habilidades)  1,247       24.9%         Usuarios digitales plenos
+  Intermedio (7-10)           1,489       29.8%         Usuarios competentes
+  Básico (4-6)               1,152       23.0%         Usuarios funcionales
+  Muy Básico (0-3)             912       18.2%         Usuarios en riesgo de exclusión
+  ─────────────────────────────────────────────────────────────────
+  TOTAL                       5,000       100%
+
+  Implicación: 54.7% de usuarios tiene nivel intermedio o avanzado.
+               45.3% tiene nivel básico o muy básico. BRECHA SIGNIFICATIVA.
+  Riesgo: Casi 1 de 5 usuarios tiene habilidades muy básicas.
+
+5.2 CLUSTERS IDENTIFICADOS
+
+  CLUSTER A: "Digital Natives" (25%)
+  - Domina >10 habilidades
+  - Usa >5 horas diarias
+  - Accede desde múltiples lugares
+  - Realiza compras online y servicios financieros
+  - Mayormente jóvenes, educación superior
+
+  CLUSTER B: "Usuarios Competentes" (30%)
+  - Domina 7-10 habilidades
+  - Usa 3-5 horas diarias
+  - Acceso principalmente hogar + trabajo
+  - Actividades de comunicación y educación
+  - Edad media, educación media/superior
+
+  CLUSTER C: "Usuarios Funcionales" (23%)
+  - Domina 4-6 habilidades
+  - Comunicación y acceso a información
+  - Poco uso de servicios avanzados
+  - Educación media
+
+  CLUSTER D: "Usuarios de Riesgo" (18%)
+  - <4 habilidades
+  - Acceso limitado a oportunidades digitales
+  - Vulnerable a exclusión digital progresiva
+  - Educación básica o sin especialización
+
+═══════════════════════════════════════════════════════════════════════════════════════════════════════
+
+BRECHAS DIGITALES IDENTIFICADAS
+─────────────────────────────────────────────────────────────────────────────────────────────────────
+
+BRECHA CRÍTICA 1: SEGURIDAD DIGITAL
+  Problema: 65.4% de usuarios NO reconoce phishing; 71.1% NO busca información segura
+  Impacto: Alto riesgo de fraude, estafas, robo de identidad
+  Solución: Capacitación urgente en ciberseguridad básica
+
+BRECHA CRÍTICA 2: SERVICIOS FINANCIEROS DIGITALES
+  Problema: 71.5% NO utiliza servicios bancarios en línea; 76.6% NO compra online
+  Impacto: Acceso limitado a economía digital; dependencia de transacciones presenciales
+  Solución: Confianza + capacitación + regulación
+
+BRECHA MODERADA 3: HABILIDADES TÉCNICAS
+  Problema: 83.4% NO puede instalar/programar; 88.3% NO crea contenido multimedia
+  Impacto: Población es consumidora, no productora digital
+  Solución: Formación vocacional en tecnología
+
+BRECHA MODERADA 4: ACCESO A CAPACITACIÓN FLEXIBLE
+  Problema: 74.4% NO accede a plataformas e-learning; 93.4% NO usa tutoriales online
+  Impacto: Dependencia en educación formal (menos adaptable a cambios tecnológicos)
+  Solución: Expansión de MOOC, webinars, y programas de e-learning
+
+BRECHA MENOR 5: ACCESO A ESPACIOS PÚBLICOS
+  Problema: 97.8% NO accede a lugares públicos con internet; 98.6% NO usa cibercafés
+  Impacto: Exclusión de usuarios sin conectividad hogareña
+  Solución: Expansión de wifi público, centros comunitarios de internet
+
+═══════════════════════════════════════════════════════════════════════════════════════════════════════
+
+HALLAZGOS POR GRUPO TEMÁTICO
+─────────────────────────────────────────────────────────────────────────────────────────────────────
+
+✓ ACCESO Y CONECTIVIDAD
+  Fortaleza:        Acceso casi universal en hogares (95.2%)
+  Debilidad:        Dependencia en internet móvil, poco acceso público
+  Recomendación:    Inversión en conectividad fija complementaria y espacios públicos
+
+✓ COMUNICACIÓN
+  Fortaleza:        Videoconferencia y redes sociales altamente adoptadas (>64%)
+  Debilidad:        Correo menos dominado (50.7%)
+  Recomendación:    Capacitación básica en herramientas de correo profesional
+
+✓ PRODUCTIVIDAD
+  Fortaleza:        Aproximadamente la mitad domina Excel y documentos
+  Debilidad:        Otra mitad tiene dificultades con herramientas de oficina
+  Recomendación:    Programas de capacitación en Office/Google Workspace
+
+✓ SEGURIDAD
+  Fortaleza:        Ninguna relevante
+  Debilidad:        Crítica brecha en reconocimiento de phishing (34.6%) y búsqueda segura (28.9%)
+  Recomendación:    URGENTE: Campaña nacional de conciencia en ciberseguridad
+
+✓ SERVICIOS DIGITALES
+  Fortaleza:        Infraestructura de internet existe
+  Debilidad:        Baja adopción de compras online (23.4%) y servicios financieros (28.5%)
+  Recomendación:    Programas de confianza, regulación clara, y capacitación
+
+✓ APRENDIZAJE
+  Fortaleza:        46.7% accedió a educación formal en escuela
+  Debilidad:        Bajo acceso a plataformas de e-learning (25.6%) y tutoriales (6.6%)
+  Recomendación:    Democratización de acceso a plataformas e-learning (subsidios, alianzas)
+
+═══════════════════════════════════════════════════════════════════════════════════════════════════════
+
+CONCLUSIONES
+─────────────────────────────────────────────────────────────────────────────────────────────────────
+
+1. POBLACIÓN CONECTADA PERO NO ALFABETIZADA
+   Chile tiene acceso a internet (88.8% casi diarios), pero alfabetización digital desigual.
+   45% de usuarios está en nivel básico o muy básico.
+
+2. INTERNET COMO MEDIO DE COMUNICACIÓN
+   Uso primario es comunicación (95%). Segundaria es información. Muy baja adopción de servicios
+   que requieren confianza (compras, finanzas).
+
+3. BRECHAS CRÍTICAS EN SEGURIDAD Y CONFIANZA
+   Población vulnerable a fraudes. Falta confianza en transacciones digitales. Requiere educación
+   urgente y regulación clara.
+
+4. EDUCACIÓN FORMAL COMO PRINCIPAL FUENTE
+   Escuela, universidad, cursos pagados son principales fuentes (46.7% + 28.5%). Poco acceso a
+   e-learning flexible. Oportunidad para plataformas educativas.
+
+5. DIGITALIZACIÓN REQUIERE ESTRATEGIA MULTISECTORIAL
+   No es solo acceso a internet. Requiere:
+   • Capacitación en seguridad digital (ciberseguridad)
+   • Programas de confianza (regulación, protección)
+   • Acceso a educación flexible (e-learning)
+   • Inclusión social (espacios públicos)
+   • Capacitación técnica (programación, innovación)
+
+═══════════════════════════════════════════════════════════════════════════════════════════════════════
+
+ARCHIVOS GENERADOS
+─────────────────────────────────────────────────────────────────────────────────────────────────────
+✓ eda_habilidades_digitales_1.png - Visualizaciones principales (8 gráficos)
+✓ eda_habilidades_digitales_2.png - Análisis avanzado (4 gráficos)
+✓ Este reporte (resumen completo)
+
+═══════════════════════════════════════════════════════════════════════════════════════════════════════
