@@ -77,3 +77,20 @@ analysis/outputs/
 # System
 .env.local
 *.docx
+
+# Analysis outputs
+outputs/
+graphify-out/
+
+# Jupyter
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# Notebooks backups (exploratory work)
+notebooks_backups/
+
+# Environment
+.venv/
+venv/
+env/
